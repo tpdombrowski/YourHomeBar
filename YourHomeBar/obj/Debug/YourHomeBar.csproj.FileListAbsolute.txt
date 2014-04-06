@@ -2,10 +2,7 @@ C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\Assets\CosmoMartini.png
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\Assets\EspressoMartini.png
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\Assets\Gin&Tonic.png
-C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\Assets\GinMartini.jpg
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\Assets\MaiTai.png
-C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\Assets\Manhattan.jpg
-C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\Assets\manhattan.png
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\Assets\Margarita.png
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\Assets\MintJulep.png
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\Assets\OldFashioned.png
@@ -56,3 +53,5 @@ C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\qualifiers.txt.intermediate
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\ProjectArchitectures.txt
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\Assets\Manhattan.png
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\Assets\GinMartini.png
