@@ -33,7 +33,25 @@
             TODO: Content should be placed within the following grid 
                   to show details for the current item
         -->
-        <Grid Grid.Row="1" x:Name="contentRegion"/>
+        <Grid Grid.Row="1" x:Name="contentRegion"> 
+            <Grid.RowDefinitions>
+                <RowDefinition Height="140"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="140"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="700"/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+
+            <Image Source="{Binding ImagePath}" Grid.Row="1" Grid.Column="1" Stretch="UniformToFill" AutomationProperties.Name="{Binding Title}"/>
+            <TextBlock Text="Recipe" FontSize="42" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="0" Grid.Column="3"/>
+            <TextBlock x:Name="itemDescription" Text="{Binding Description}" FontSize="20" Grid.Row="1" Grid.Column="3" 
+                        IsHitTestVisible="false" TextWrapping="WrapWholeWords" VerticalAlignment="Top" Margin="0,0,30,40"/>
+		</Grid>
 
         <!-- Back button and page title -->
         <Grid>

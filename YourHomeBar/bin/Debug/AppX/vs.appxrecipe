@@ -6,7 +6,7 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>1347915e-3464-436a-887c-f5f7c7918456</PackageIdentityName>
-    <RegisteredManifestChecksum>9D6BBAE9EDA497C64E193B357C12722B86DCD2F4400AC9B6143E2520C403BAA1</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>35CCEE4806394096ACFE9C9C04AECCC282AF7D82CD15F87EA8EAC60494BB513B</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>1347915e-3464-436a-887c-f5f7c7918456_1.0.0.0_neutral__yps17xarsp2at</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>1347915e-3464-436a-887c-f5f7c7918456_yps17xarsp2at!App</RegisteredUserModeAppID>
     <RegisteredPackageID>1347915e-3464-436a-887c-f5f7c7918456</RegisteredPackageID>
@@ -17,13 +17,13 @@
     <AppXManifest Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-04-06T02:24:58.633</Modified>
+      <Modified>2014-04-08T04:16:59.797</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\YourHomeBar.exe">
       <PackagePath>YourHomeBar.exe</PackagePath>
-      <Modified>2014-04-06T02:24:58.530</Modified>
+      <Modified>2014-04-08T04:16:59.602</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\Assets\Compari&amp;Soda.png">
       <PackagePath>Assets\Compari&amp;Soda.png</PackagePath>
@@ -123,7 +123,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\DataModel\SampleData.json">
       <PackagePath>DataModel\SampleData.json</PackagePath>
-      <Modified>2014-04-06T02:24:56.358</Modified>
+      <Modified>2014-04-08T04:16:32.223</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
@@ -131,7 +131,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\GroupedItemsPage.xbf">
       <PackagePath>GroupedItemsPage.xbf</PackagePath>
-      <Modified>2014-04-06T01:59:32.751</Modified>
+      <Modified>2014-04-08T02:29:07.081</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\GroupDetailPage.xbf">
       <PackagePath>GroupDetailPage.xbf</PackagePath>
@@ -139,11 +139,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\ItemDetailPage.xbf">
       <PackagePath>ItemDetailPage.xbf</PackagePath>
-      <Modified>2014-04-06T01:59:32.753</Modified>
+      <Modified>2014-04-08T02:29:07.083</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-04-06T02:24:58.609</Modified>
+      <Modified>2014-04-08T04:16:59.708</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
