@@ -31,6 +31,12 @@
 		</LinearGradientBrush>
 	</Page.Background>
 
+    <Page.BottomAppBar>
+        <AppBar>
+            <Button Content="Add Recipe" HorizontalAlignment="Right" Margin="10" Click="Button_AddRecipe"/>
+        </AppBar>    
+    </Page.BottomAppBar>
+    
     <!--
         This grid acts as a root panel for the page that defines two rows:
         * Row 0 contains the back button and page title

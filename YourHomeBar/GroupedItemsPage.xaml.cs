@@ -119,5 +119,10 @@ namespace YourHomeBar
         }
 
         #endregion
+
+        private void Button_AddRecipe(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(AddNewRecipe));
+        }
     }
 }

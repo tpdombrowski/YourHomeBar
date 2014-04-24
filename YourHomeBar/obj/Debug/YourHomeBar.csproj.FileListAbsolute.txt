@@ -55,3 +55,8 @@ C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\ProjectArchitectures.txt
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\Assets\Manhattan.png
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\Assets\GinMartini.png
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\AddNewRecipe.g.i.cs
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\AddNewRecipe.g.cs
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\AddNewRecipe.xaml
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\AddNewRecipe.xbf
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\AddNewRecipe.xbf

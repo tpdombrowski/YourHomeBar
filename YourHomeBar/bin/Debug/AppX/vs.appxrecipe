@@ -6,7 +6,7 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>1347915e-3464-436a-887c-f5f7c7918456</PackageIdentityName>
-    <RegisteredManifestChecksum>35CCEE4806394096ACFE9C9C04AECCC282AF7D82CD15F87EA8EAC60494BB513B</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>1C2FD070B5088C7F8CB1121D6DF85552C3970A891E62E5EE9195342C4F60A61E</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>1347915e-3464-436a-887c-f5f7c7918456_1.0.0.0_neutral__yps17xarsp2at</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>1347915e-3464-436a-887c-f5f7c7918456_yps17xarsp2at!App</RegisteredUserModeAppID>
     <RegisteredPackageID>1347915e-3464-436a-887c-f5f7c7918456</RegisteredPackageID>
@@ -17,13 +17,13 @@
     <AppXManifest Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-04-08T04:16:59.797</Modified>
+      <Modified>2014-04-24T00:16:46.261</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\YourHomeBar.exe">
       <PackagePath>YourHomeBar.exe</PackagePath>
-      <Modified>2014-04-08T04:16:59.602</Modified>
+      <Modified>2014-04-24T00:52:40.275</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\Assets\Compari&amp;Soda.png">
       <PackagePath>Assets\Compari&amp;Soda.png</PackagePath>
@@ -51,7 +51,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\Assets\Manhattan.png">
       <PackagePath>Assets\Manhattan.png</PackagePath>
-      <Modified>2014-04-06T02:05:58.401</Modified>
+      <Modified>2014-04-09T23:59:29.675</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\Assets\Margarita.png">
       <PackagePath>Assets\Margarita.png</PackagePath>
@@ -63,7 +63,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\Assets\OldFashioned.png">
       <PackagePath>Assets\OldFashioned.png</PackagePath>
-      <Modified>2014-04-05T15:59:21.670</Modified>
+      <Modified>2014-04-09T23:59:29.709</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\Assets\RustyNail.png">
       <PackagePath>Assets\RustyNail.png</PackagePath>
@@ -129,9 +129,13 @@
       <PackagePath>App.xbf</PackagePath>
       <Modified>2014-04-06T01:59:32.748</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\AddNewRecipe.xbf">
+      <PackagePath>AddNewRecipe.xbf</PackagePath>
+      <Modified>2014-04-24T00:52:39.992</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\GroupedItemsPage.xbf">
       <PackagePath>GroupedItemsPage.xbf</PackagePath>
-      <Modified>2014-04-08T02:29:07.081</Modified>
+      <Modified>2014-04-24T00:52:39.995</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\GroupDetailPage.xbf">
       <PackagePath>GroupDetailPage.xbf</PackagePath>
@@ -143,7 +147,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-04-08T04:16:59.708</Modified>
+      <Modified>2014-04-24T00:16:46.233</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

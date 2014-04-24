@@ -31,6 +31,12 @@
 		</LinearGradientBrush>
 	</Page.Background>
 
+    <Page.BottomAppBar>
+        <AppBar>
+            <Button x:ConnectionId='1' Content="Add Recipe" HorizontalAlignment="Right" Margin="10"                         />
+        </AppBar>    
+    </Page.BottomAppBar>
+    
     <!--
         This grid acts as a root panel for the page that defines two rows:
         * Row 0 contains the back button and page title
@@ -48,7 +54,7 @@
         </Grid.RowDefinitions>
 
         <!-- Horizontal scrolling grid -->
-        <GridView x:ConnectionId='1'
+        <GridView x:ConnectionId='2'
             x:Name="itemGridView"
             AutomationProperties.AutomationId="ItemGridView"
             AutomationProperties.Name="Grouped Items"
@@ -82,7 +88,7 @@
                     <GroupStyle.HeaderTemplate>
                         <DataTemplate>
                             <Grid Margin="0,0,0,2">
-                                <Button x:ConnectionId='2' Foreground="{ThemeResource ApplicationHeaderForegroundThemeBrush}"
+                                <Button x:ConnectionId='3' Foreground="{ThemeResource ApplicationHeaderForegroundThemeBrush}"
                                     AutomationProperties.Name="Group Title"
                                                         
                                     Style="{StaticResource TextBlockButtonStyle}" >
