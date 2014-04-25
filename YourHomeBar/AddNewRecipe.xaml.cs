@@ -98,16 +98,35 @@ namespace YourHomeBar
 
         #endregion
 
-        private void AddIngredient(object sender, RoutedEventArgs e)
+        private void Button_AddIngredient(object sender, RoutedEventArgs e)
         {
-            if (ListIngredientsTitle.Items.Count <= 13)
-                ListIngredientsTitle.Items.Add("Ingredients");
+            //IngredientsPart.Items.Add(ComboBoxIngredientPart.Text);
         }
 
-        private void RemoveIngredient(object sender, RoutedEventArgs e)
+        private void Button_RemoveIngredient(object sender, RoutedEventArgs e)
         {
-            if (ListIngredientsTitle.Items.Count > 0)
-                ListIngredientsTitle.Items.Remove(ListIngredientsTitle.Items.Last());
+            //if (ListIngredientsTitle.Items.Count > 0)
+            //    ListIngredientsTitle.Items.Remove(ListIngredientsTitle.Items.Last());
+        }
+
+        private void TempIngrediantChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void TempGlassChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void TempAlcoholChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_AddPicture(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
