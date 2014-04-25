@@ -122,7 +122,7 @@
             
         </Grid>
         
-        <Button Content="Submit" FontSize="20" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center"/>
+        <Button Content="Submit" FontSize="20" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" Click="Button_Click"/>
 
         <!--<Grid Grid.Row="1" x:Name="contentRegion"/>-->
         

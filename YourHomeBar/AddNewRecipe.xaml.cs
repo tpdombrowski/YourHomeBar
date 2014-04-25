@@ -128,5 +128,18 @@ namespace YourHomeBar
         {
 
         }
+
+        private void Button_Submit(object sender, RoutedEventArgs e)
+        {
+
+            MySQLRecipe SqlDB = new MySQLRecipe();
+
+            MySQLRecipe NewRecipe;
+
+            NewRecipe.
+
+            SqlDB.InsertRecipe()
+
+        }
     }
 }
