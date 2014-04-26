@@ -33,6 +33,7 @@ namespace YourHomeBar
         public App()
         {
             this.InitializeComponent();
+            
             this.Suspending += OnSuspending;
         }
 

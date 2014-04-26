@@ -110,7 +110,7 @@
 
                 <TextBlock Text="Name" Grid.Row="1" Margin="13" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20"/>
 
-                <StackPanel x:Name="ListViewIngredients" Grid.Row="2">
+                <StackPanel x:Name="StackIngredients" Grid.Row="2">
                     <ComboBox x:Name="ComboBoxIngrediant" Margin="10" SelectionChanged="TempIngrediantChanged">
                         <x:String>Vodka</x:String>
                         <x:String>Whiskey</x:String>

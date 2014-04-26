@@ -17,7 +17,7 @@ namespace YourHomeBar
         public string GlassType { get; set; }
         public string Ingredient { get; set; }
 
-        private async void CreateTable()
+        public async void CreateTable()
         {
 
             SQLiteAsyncConnection conn = new SQLiteAsyncConnection("RecipeList");

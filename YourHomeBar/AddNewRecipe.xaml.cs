@@ -133,16 +133,23 @@ namespace YourHomeBar
         private void Button_Submit(object sender, RoutedEventArgs e)
         {
 
-            MySQLRecipe SQLConnection = new MySQLRecipe();
-
-            MySQLRecipe NewRecipe = new MySQLRecipe
+            // Check Add recipe is completely filled in
+            if (ComboBoxAlcohol.SelectedItem != null && ComboBoxAlcohol.SelectedItem != null && ComboBoxIngrediant.SelectedItem != null)
             {
-                CategoryType = ComboBoxAlcohol.SelectedItem.ToString(),
-                GlassType = ComboBoxAlcohol.SelectedItem.ToString(),
-                Ingredient = ComboBoxIngrediant.SelectedItem.ToString()
-            };
 
-            SQLConnection.InsertRecipe(NewRecipe);
+                MySQLRecipe SQLConnection = new MySQLRecipe();
+
+                MySQLRecipe NewRecipe = new MySQLRecipe
+                {
+                    CategoryType = ComboBoxAlcohol.SelectedItem.ToString(),
+                    GlassType = ComboBoxAlcohol.SelectedItem.ToString(),
+                    Ingredient = ComboBoxIngrediant.SelectedItem.ToString()
+                };
+
+                SQLConnection.CreateTable();
+                SQLConnection.InsertRecipe(NewRecipe);
+
+            }
 
         }
 
