@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using SQLite;
 
 // The Item Detail Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234232
 
@@ -132,14 +133,19 @@ namespace YourHomeBar
         private void Button_Submit(object sender, RoutedEventArgs e)
         {
 
-            MySQLRecipe SqlDB = new MySQLRecipe();
+            MySQLRecipe SQLConnection = new MySQLRecipe();
 
-            MySQLRecipe NewRecipe;
+            MySQLRecipe NewRecipe = new MySQLRecipe
+            {
+                CategoryType = ComboBoxAlcohol.SelectedItem.ToString(),
+                GlassType = ComboBoxAlcohol.SelectedItem.ToString(),
+                Ingredient = ComboBoxIngrediant.SelectedItem.ToString()
+            };
 
-            NewRecipe.
-
-            SqlDB.InsertRecipe()
+            SQLConnection.InsertRecipe(NewRecipe);
 
         }
+
     }
+    
 }

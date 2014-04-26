@@ -102,12 +102,6 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <SDKReference Include="SQLite.WinRT, Version=3.8.4.3">
-      <Name>SQLite for Windows Runtime</Name>
-    </SDKReference>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="AddNewRecipe.xaml.cs">
       <DependentUpon>AddNewRecipe.xaml</DependentUpon>
     </Compile>

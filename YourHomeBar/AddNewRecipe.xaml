@@ -78,13 +78,13 @@
 
                 <TextBlock Text="Parts" Grid.Row="1" Margin="13" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20"/>
 
-                <ListView x:Name="IngredientsPart" VerticalAlignment="Stretch" Grid.Row="2">
+                <StackPanel x:Name="IngredientsPart" VerticalAlignment="Stretch" Grid.Row="2">
                     <ComboBox x:Name="ComboBoxIngredientPart" Margin="10">
                         <x:String>1/2 Ounce</x:String>
                         <x:String>1 Ounce</x:String>
                         <x:String>1 1/1 ounce</x:String>
                     </ComboBox>
-                </ListView>
+                </StackPanel>
             </Grid>
             
             <Grid Grid.Column="3">
@@ -108,13 +108,15 @@
                     </ComboBox>
                 </StackPanel>
 
-                <ListView x:Name="ListViewIngredients" Grid.Row="2">
+                <TextBlock Text="Name" Grid.Row="1" Margin="13" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20"/>
+
+                <StackPanel x:Name="ListViewIngredients" Grid.Row="2">
                     <ComboBox x:Name="ComboBoxIngrediant" Margin="10" SelectionChanged="TempIngrediantChanged">
                         <x:String>Vodka</x:String>
                         <x:String>Whiskey</x:String>
                         <x:String>Rum</x:String>
                     </ComboBox>
-                </ListView>
+                </StackPanel>
 
                 <Button Content="Delete Ingredient" Grid.Row="3" HorizontalAlignment="Center" Margin="10,10" Click="Button_RemoveIngredient"/>
             </Grid>
@@ -122,7 +124,7 @@
             
         </Grid>
         
-        <Button Content="Submit" FontSize="20" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" Click="Button_Click"/>
+        <Button Content="Submit" FontSize="20" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" Click="Button_Submit"/>
 
         <!--<Grid Grid.Row="1" x:Name="contentRegion"/>-->
         
