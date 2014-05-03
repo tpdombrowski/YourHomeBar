@@ -2,8 +2,14 @@
 <recipedetails>
   <ingredients>
     <ingredientName>Vodka</ingredientName>
+  </ingredients>
+  <ingredients>
     <ingredientName>Whiskey</ingredientName>
+  </ingredients>
+  <ingredients>
     <ingredientName>Rum</ingredientName>
+  </ingredients>
+  <ingredients>
     <ingredientName>Soda</ingredientName>
     <ingredientName>Ginger Ale</ingredientName>
     <ingredientName>Orange Juice</ingredientName>

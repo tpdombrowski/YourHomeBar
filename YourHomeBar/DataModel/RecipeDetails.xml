@@ -2,25 +2,59 @@
 <recipedetails>
   <ingredients>
     <ingredientName>Vodka</ingredientName>
+  </ingredients>
+  <ingredients>
     <ingredientName>Whiskey</ingredientName>
+  </ingredients>
+  <ingredients>
     <ingredientName>Rum</ingredientName>
+  </ingredients>
+  <ingredients>
     <ingredientName>Soda</ingredientName>
+  </ingredients>
+  <ingredients>
     <ingredientName>Ginger Ale</ingredientName>
+  </ingredients>
+  <ingredients>
     <ingredientName>Orange Juice</ingredientName>
+  </ingredients>
+  <ingredients>
     <ingredientName>Milk</ingredientName>
+  </ingredients>
+  <ingredients>
     <ingredientName>Bailey's</ingredientName>
+  </ingredients>
+  <ingredients>
     <ingredientName>Kahlua</ingredientName>
+  </ingredients>
+  <ingredients>
     <ingredientName>Lemonaid</ingredientName>
+  </ingredients>
+  <ingredients>
     <ingredientName>Beer</ingredientName>
+  </ingredients>
+  <ingredients>
     <ingredientName>Wine</ingredientName>
   </ingredients>
   <parts>
     <partName>1/2 Ounce</partName>
+  </parts>
+  <parts>
     <partName>1 Ounce</partName>
+  </parts>
+  <parts>
     <partName>1-1/2 Ounce</partName>
+  </parts>
+  <parts>
     <partName>Splash</partName>
+  </parts>
+  <parts>
     <partName>Pint</partName>
+  </parts>
+  <parts>
     <partName>Half a Pint</partName>
+  </parts>
+  <parts>
     <partName>1/4 Ounce</partName>
   </parts>
 </recipedetails>
