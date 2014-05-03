@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using SQLite;
+using System.Collections.ObjectModel;
 
 // The Item Detail Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234232
 
@@ -57,9 +58,15 @@ namespace YourHomeBar
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += navigationHelper_LoadState;
 
-            BuildIngedientsComboBox();
+            StackIngredients.Children.Add(ComboBoxIngredients);
+            StackIngredientsPart.Children.Add(ComboBoxParts);
 
-            BuildPartsComboBox();
+            AmountOfIngredients++;
+
+            BuildMainAlcoholComboBox();
+            BuildGlassTypeComboBox();
+            BuildIngedientsComboBox(ref ComboBoxIngredients);
+            BuildPartsComboBox(ref ComboBoxParts);
         }
 
         /// <summary>
@@ -75,16 +82,12 @@ namespace YourHomeBar
         /// session.  The state will be null the first time a page is visited.</param>
         private void navigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
+
             object navigationParameter;
             if (e.PageState != null && e.PageState.ContainsKey("SelectedItem"))
             {
                 navigationParameter = e.PageState["SelectedItem"];
             }
-
-            StackIngredients.Children.Add(ComboBoxIngredients);
-            StackIngredientsPart.Children.Add(ComboBoxParts);
-
-            AmountOfIngredients++;
 
             // TODO: Assign a bindable group to this.DefaultViewModel["Group"]
             // TODO: Assign a collection of bindable items to this.DefaultViewModel["Items"]
@@ -116,21 +119,25 @@ namespace YourHomeBar
 
         private void AddIngredient_Button_Click(object sender, RoutedEventArgs e)
         {
+
             if (StackIngredients.Children.Count < 10)
             {
-                ComboBox temp = new ComboBox();
-                temp.Items.Add("Temp");
-                
-                StackIngredients.Children.Add(temp);
-                StackIngredientsPart.Children.Add(ComboBoxParts);
+
+                ComboBox newComboBox = new ComboBox();
+                BuildIngedientsComboBox(ref newComboBox);
+                StackIngredients.Children.Add(newComboBox);
+
+                //StackIngredientsPart.Children.Add(ComboBoxParts);
 
                 AmountOfIngredients++;
+
             }
+
         }
 
         private void RemoveIngredient_Button_Click(object sender, RoutedEventArgs e)
         {
-            if (StackIngredients.Children.Count>0)
+            if (StackIngredients.Children.Count > 0)
             {
                 StackIngredients.Children.RemoveAt(StackIngredients.Children.Count);
                 StackIngredientsPart.Children.RemoveAt(StackIngredientsPart.Children.Count);
@@ -197,41 +204,99 @@ namespace YourHomeBar
             //img.Source = "Assets/DarkGray.png";
             //UserPicture.Source = picture;
         }
-        
-        private void BuildIngedientsComboBox()
+
+        private void BuildMainAlcoholComboBox()
+        {
+
+            string recipeDetailsXMLPath = Path.Combine(Package.Current.InstalledLocation.Path, "DataModel/RecipeDetails.xml");
+            XDocument loadedData = XDocument.Load(recipeDetailsXMLPath);
+
+            var mainAlcoholList = from query in loadedData.Descendants("mainalcohol")
+            select new MainAlcoholList
+            {
+                MainAlcohol = (string)query.Element("mainalcoholname")
+            };
+
+            var sortedMainAlcoholList =
+                from mainAlcohol in mainAlcoholList
+                orderby mainAlcohol.MainAlcohol ascending
+                select mainAlcohol;
+
+            foreach (var mainAlcohol in sortedMainAlcoholList)
+            {
+                ComboBoxIngredients.Items.Add(mainAlcohol.MainAlcohol);
+            }
+
+        }
+
+        private void BuildGlassTypeComboBox()
+        {
+
+            string recipeDetailsXMLPath = Path.Combine(Package.Current.InstalledLocation.Path, "DataModel/RecipeDetails.xml");
+            XDocument loadedData = XDocument.Load(recipeDetailsXMLPath);
+
+            var glassTypeList = from query in loadedData.Descendants("glasstype")
+            select new GlassTypeList
+            {
+                GlassType = (string)query.Element("glasstypename")
+            };
+
+            var sortedGlassTypeList =
+                from glassType in glassTypeList
+                orderby glassType.GlassType ascending
+                select glassType;
+
+            foreach (var glasstype in sortedGlassTypeList)
+            {
+                ComboBoxIngredients.Items.Add(glasstype.GlassType);
+            }
+
+        }
+
+        private void BuildIngedientsComboBox(ref ComboBox tempComboBax)
         {
 
             string recipeDetailsXMLPath = Path.Combine(Package.Current.InstalledLocation.Path, "DataModel/RecipeDetails.xml");
             XDocument loadedData = XDocument.Load(recipeDetailsXMLPath);
 
             var ingredientList = from query in loadedData.Descendants("ingredients")
-            select new Ingredients
+            select new IngredientList
             {
-                Ingredient = (string)query.Element("ingredientName")
+                Ingredient = (string)query.Element("ingredientname")
             };
 
-            foreach (var ingredient in ingredientList)
+            var sortedIngredientList =
+                from ingredient in ingredientList
+                orderby ingredient.Ingredient ascending
+                select ingredient;
+
+            foreach (var ingredient in sortedIngredientList)
             {
                 ComboBoxIngredients.Items.Add(ingredient.Ingredient);
             }
                      
         }
 
-        private void BuildPartsComboBox()
+        private void BuildPartsComboBox(ref ComboBox tempComboBax)
         {
 
             string recipeDetailsXMLPath = Path.Combine(Package.Current.InstalledLocation.Path, "DataModel/RecipeDetails.xml");
             XDocument loadedData = XDocument.Load(recipeDetailsXMLPath);
 
             var partList = from query in loadedData.Descendants("parts")
-            select new Parts
-            {
-                Part = (string)query.Element("partName")
-            };
+                           select new PartList
+                           {
+                               Part = (string)query.Element("partname")
+                           };
 
-            foreach (var part in partList)
+            var sortedPartlist = 
+                from part in partList
+                orderby part.Part ascending
+                select part;
+
+            foreach (var part in sortedPartlist)
             {
-                ComboBoxParts.Items.Add(part.Part);
+                tempComboBax.Items.Add(part.Part);
             }
 
         }

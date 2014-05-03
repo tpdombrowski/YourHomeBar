@@ -49,7 +49,6 @@
                 <Image x:Name="UserPicture" Margin="10"/>
 
                 <Button x:Name="AddUserPicture" Content="Add your photo" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" Grid.Row="1" Click="AddUserPicture_Button_Click"/>
-                
             </Grid>
             
             <Grid Grid.Column="1">
@@ -90,13 +89,14 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="auto"/>
                 </Grid.RowDefinitions>
-
+                
                 <StackPanel Grid.Row="0">
-                    <ComboBox x:Name="ComboBoxAlcohol" Margin="10" SelectionChanged="TempAlcoholChanged">
-                        <x:String>Vodka</x:String>
-                        <x:String>Whiskey</x:String>
-                        <x:String>Rum</x:String>
+                    <ComboBox x:Name="ComboBoxAlcohol"
+                              Margin="10"
+                              SelectionChanged="TempAlcoholChanged"
+                              ItemsSource="{Binding MainAlcoholBinding}">
                     </ComboBox>
+
                     <ComboBox x:Name="ComboBoxGlass" Margin="10" SelectionChanged="TempGlassChanged">
                         <x:String>Rocks</x:String>
                         <x:String>Martini</x:String>

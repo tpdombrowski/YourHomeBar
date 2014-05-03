@@ -1,32 +1,99 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <recipedetails>
+  <mainalcohol>
+    <mainalcoholname>Vodka</mainalcoholname>
+  </mainalcohol>
+  <mainalcohol>
+    <mainalcoholname>Whiskey</mainalcoholname>
+  </mainalcohol>
+  <mainalcohol>
+    <mainalcoholname>Gin</mainalcoholname>
+  </mainalcohol>
+  <mainalcohol>
+    <mainalcoholname>Rum</mainalcoholname>
+  </mainalcohol>
+  <mainalcohol>
+    <mainalcoholname>Tequila</mainalcoholname>
+  </mainalcohol>
+  <mainalcohol>
+    <mainalcoholname>miscellaneous</mainalcoholname>
+  </mainalcohol>
+
+  <glasstype>
+    <glasstypename>Martini</glasstypename>
+  </glasstype>
+  <glasstype>
+    <glasstypename>Rocks</glasstypename>
+  </glasstype>
+  <glasstype>
+    <glasstypename>Pilsner</glasstypename>
+  </glasstype>
+  <glasstype>
+    <glasstypename>Collins</glasstypename>
+  </glasstype>
+  <glasstype>
+    <glasstypename>Poco</glasstypename>
+  </glasstype>
+  <glasstype>
+    <glasstypename>Beer</glasstypename>
+  </glasstype>
+  
   <ingredients>
-    <ingredientName>Vodka</ingredientName>
+    <ingredientname>Vodka</ingredientname>
   </ingredients>
   <ingredients>
-    <ingredientName>Whiskey</ingredientName>
+    <ingredientname>Whiskey</ingredientname>
   </ingredients>
   <ingredients>
-    <ingredientName>Rum</ingredientName>
+    <ingredientname>Rum</ingredientname>
   </ingredients>
   <ingredients>
-    <ingredientName>Soda</ingredientName>
-    <ingredientName>Ginger Ale</ingredientName>
-    <ingredientName>Orange Juice</ingredientName>
-    <ingredientName>Milk</ingredientName>
-    <ingredientName>Bailey's</ingredientName>
-    <ingredientName>Kahlua</ingredientName>
-    <ingredientName>Lemonaid</ingredientName>
-    <ingredientName>Beer</ingredientName>
-    <ingredientName>Wine</ingredientName>
+    <ingredientname>Soda</ingredientname>
   </ingredients>
+  <ingredients>
+    <ingredientname>Ginger Ale</ingredientname>
+  </ingredients>
+  <ingredients>
+    <ingredientname>Orange Juice</ingredientname>
+  </ingredients>
+  <ingredients>
+    <ingredientname>Milk</ingredientname>
+  </ingredients>
+  <ingredients>
+    <ingredientname>Bailey's</ingredientname>
+  </ingredients>
+  <ingredients>
+    <ingredientname>Kahlua</ingredientname>
+  </ingredients>
+  <ingredients>
+    <ingredientname>Lemonaid</ingredientname>
+  </ingredients>
+  <ingredients>
+    <ingredientname>Beer</ingredientname>
+  </ingredients>
+  <ingredients>
+    <ingredientname>Wine</ingredientname>
+  </ingredients>
+  
   <parts>
-    <partName>1/2 Ounce</partName>
-    <partName>1 Ounce</partName>
-    <partName>1-1/2 Ounce</partName>
-    <partName>Splash</partName>
-    <partName>Pint</partName>
-    <partName>Half a Pint</partName>
-    <partName>1/4 Ounce</partName>
+    <partname>1/2 Ounce</partname>
+  </parts>
+  <parts>
+    <partname>1 Ounce</partname>
+  </parts>
+  <parts>
+    <partname>1-1/2 Ounce</partname>
+  </parts>
+  <parts>
+    <partname>Splash</partname>
+  </parts>
+  <parts>
+    <partname>Pint</partname>
+  </parts>
+  <parts>
+    <partname>Half a Pint</partname>
+  </parts>
+  <parts>
+    <partname>1/4 Ounce</partname>
   </parts>
 </recipedetails>

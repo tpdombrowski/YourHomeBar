@@ -187,6 +187,7 @@
     <Content Include="Assets\WhiskeySour.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\wood.jpg" />
     <Content Include="DataModel\RecipeDetails.xml" />
     <Content Include="DataModel\SampleData.json" />
   </ItemGroup>

@@ -6,7 +6,29 @@ using System.Threading.Tasks;
 
 namespace YourHomeBar
 {
-    class Ingredients
+    class MainAlcoholList
+    {
+        string mainAlcohol;
+
+        public string MainAlcohol
+        {
+            get { return mainAlcohol; }
+            set { mainAlcohol = value; }
+        }
+    }
+
+    class GlassTypeList
+    {
+        string glassType;
+
+        public string GlassType
+        {
+            get { return glassType; }
+            set { glassType = value; }
+        }
+    }
+
+    class IngredientList
     {
         string ingredient;
 
@@ -17,7 +39,7 @@ namespace YourHomeBar
         }
     }
 
-    class Parts
+    class PartList
     {
         string part;
 

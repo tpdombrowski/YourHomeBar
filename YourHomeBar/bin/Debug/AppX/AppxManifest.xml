@@ -22,13 +22,15 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="YourHomeBar.exe" EntryPoint="YourHomeBar.App">
-      <m2:VisualElements DisplayName="YourHomeBar" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="YourHomeBar" ForegroundText="light" BackgroundColor="#464646">
+      <m2:VisualElements DisplayName="YourHomeBar" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="Your Home Bar" ForegroundText="light" BackgroundColor="#464646">
         <m2:SplashScreen Image="Assets\SplashScreen.png" />
       </m2:VisualElements>
     </Application>
   </Applications>
   <Capabilities>
     <Capability Name="internetClient" />
+    <Capability Name="internetClientServer" />
+    <Capability Name="picturesLibrary" />
   </Capabilities>
   <build:Metadata>
     <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v4.5.1" />
