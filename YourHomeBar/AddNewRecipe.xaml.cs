@@ -27,6 +27,10 @@ namespace YourHomeBar
     {
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
+        public static int AmountOfSelectedIngredients = 0;
+        public static int AmountOfIngredients = 0;
+        public ComboBox ComboBoxIngredients = new ComboBox();
+        public ComboBox ComboBoxParts = new ComboBox();
 
         /// <summary>
         /// This can be changed to a strongly typed view model.
@@ -50,6 +54,14 @@ namespace YourHomeBar
             this.InitializeComponent();
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += navigationHelper_LoadState;
+                        
+            ComboBoxIngredients.Items.Add("Vodka");
+            ComboBoxIngredients.Items.Add("Whiskey");
+            ComboBoxIngredients.Items.Add("Rum");
+        
+            ComboBoxParts.Items.Add("1/2 Ounces");
+            ComboBoxParts.Items.Add("1 Ounces");
+            ComboBoxParts.Items.Add("1-1/2 Ounces");
         }
 
         /// <summary>
@@ -99,15 +111,26 @@ namespace YourHomeBar
 
         #endregion
 
-        private void Button_AddIngredient(object sender, RoutedEventArgs e)
+        private void AddIngredient_Button_Click(object sender, RoutedEventArgs e)
         {
-            //IngredientsPart.Items.Add(ComboBoxIngredientPart.Text);
+            if (StackIngredients.Children.Count < 10)
+            {
+                StackIngredients.Children.Add(ComboBoxIngredients);
+                StackIngredientsPart.Children.Add(ComboBoxParts);
+
+                AmountOfIngredients++;
+            }
         }
 
-        private void Button_RemoveIngredient(object sender, RoutedEventArgs e)
+        private void RemoveIngredient_Button_Click(object sender, RoutedEventArgs e)
         {
-            //if (ListIngredientsTitle.Items.Count > 0)
-            //    ListIngredientsTitle.Items.Remove(ListIngredientsTitle.Items.Last());
+            if (StackIngredients.Children.Count>0)
+            {
+                StackIngredients.Children.RemoveAt(StackIngredients.Children.Count - 1);
+                StackIngredientsPart.Children.RemoveAt(StackIngredientsPart.Children.Count - 1);
+
+                AmountOfIngredients--;
+            }
         }
 
         private void TempIngrediantChanged(object sender, SelectionChangedEventArgs e)
@@ -125,32 +148,31 @@ namespace YourHomeBar
 
         }
 
-        private void Button_AddPicture(object sender, RoutedEventArgs e)
+        private void AddPicture_Button_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void Button_Submit(object sender, RoutedEventArgs e)
+        private void Submit_Button_Click(object sender, RoutedEventArgs e)
         {
-
             // Check Add recipe is completely filled in
-            if (ComboBoxAlcohol.SelectedItem != null && ComboBoxAlcohol.SelectedItem != null && ComboBoxIngrediant.SelectedItem != null)
+            if (ComboBoxAlcohol.SelectedItem != null && ComboBoxGlass.SelectedItem != null && ComboBoxIngredients.SelectedItem != null && AmountOfIngredients != 0)
             {
-
+                /*
                 MySQLRecipe SQLConnection = new MySQLRecipe();
 
                 MySQLRecipe NewRecipe = new MySQLRecipe
                 {
                     CategoryType = ComboBoxAlcohol.SelectedItem.ToString(),
-                    GlassType = ComboBoxAlcohol.SelectedItem.ToString(),
-                    Ingredient = ComboBoxIngrediant.SelectedItem.ToString()
+                    GlassType = ComboBoxAlcohol.SelectedItem.ToString()
                 };
+                */
 
-                SQLConnection.CreateTable();
-                SQLConnection.InsertRecipe(NewRecipe);
+                status.Text = "sumbitted correctly";
 
-            }
-
+                //SQLConnection.CreateTable();
+                //SQLConnection.InsertRecipe(NewRecipe);
+            } 
         }
 
     }

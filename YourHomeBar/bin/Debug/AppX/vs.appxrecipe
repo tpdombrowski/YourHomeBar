@@ -17,13 +17,13 @@
     <AppXManifest Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-04-26T00:28:56.871</Modified>
+      <Modified>2014-04-26T00:42:05.432</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\YourHomeBar.exe">
       <PackagePath>YourHomeBar.exe</PackagePath>
-      <Modified>2014-04-26T00:39:04.001</Modified>
+      <Modified>2014-05-03T00:42:04.640</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\Assets\Compari&amp;Soda.png">
       <PackagePath>Assets\Compari&amp;Soda.png</PackagePath>
@@ -131,7 +131,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\AddNewRecipe.xbf">
       <PackagePath>AddNewRecipe.xbf</PackagePath>
-      <Modified>2014-04-26T00:28:56.189</Modified>
+      <Modified>2014-05-02T05:53:03.014</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\GroupedItemsPage.xbf">
       <PackagePath>GroupedItemsPage.xbf</PackagePath>
@@ -143,11 +143,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\ItemDetailPage.xbf">
       <PackagePath>ItemDetailPage.xbf</PackagePath>
-      <Modified>2014-04-08T02:29:07.083</Modified>
+      <Modified>2014-05-02T04:14:29.921</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-04-26T00:28:56.759</Modified>
+      <Modified>2014-04-26T00:42:05.399</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
