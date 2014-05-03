@@ -124,37 +124,31 @@ namespace YourHomeBar.YourHomeBar_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[14];
-            _typeNameTable[0] = "YourHomeBar.VoteOnRecipe";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.SettingsFlyout";
-            _typeNameTable[2] = "Windows.UI.Xaml.Controls.ContentControl";
-            _typeNameTable[3] = "YourHomeBar.AddNewRecipe";
-            _typeNameTable[4] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[5] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[6] = "YourHomeBar.Common.ObservableDictionary";
-            _typeNameTable[7] = "Object";
-            _typeNameTable[8] = "String";
-            _typeNameTable[9] = "YourHomeBar.Common.NavigationHelper";
-            _typeNameTable[10] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[11] = "YourHomeBar.GroupedItemsPage";
-            _typeNameTable[12] = "YourHomeBar.GroupDetailPage";
-            _typeNameTable[13] = "YourHomeBar.ItemDetailPage";
+            _typeNameTable = new string[11];
+            _typeNameTable[0] = "YourHomeBar.AddNewRecipe";
+            _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "YourHomeBar.Common.ObservableDictionary";
+            _typeNameTable[4] = "Object";
+            _typeNameTable[5] = "String";
+            _typeNameTable[6] = "YourHomeBar.Common.NavigationHelper";
+            _typeNameTable[7] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[8] = "YourHomeBar.GroupedItemsPage";
+            _typeNameTable[9] = "YourHomeBar.GroupDetailPage";
+            _typeNameTable[10] = "YourHomeBar.ItemDetailPage";
 
-            _typeTable = new global::System.Type[14];
-            _typeTable[0] = typeof(global::YourHomeBar.VoteOnRecipe);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.SettingsFlyout);
-            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
-            _typeTable[3] = typeof(global::YourHomeBar.AddNewRecipe);
-            _typeTable[4] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[5] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[6] = typeof(global::YourHomeBar.Common.ObservableDictionary);
-            _typeTable[7] = typeof(global::System.Object);
-            _typeTable[8] = typeof(global::System.String);
-            _typeTable[9] = typeof(global::YourHomeBar.Common.NavigationHelper);
-            _typeTable[10] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[11] = typeof(global::YourHomeBar.GroupedItemsPage);
-            _typeTable[12] = typeof(global::YourHomeBar.GroupDetailPage);
-            _typeTable[13] = typeof(global::YourHomeBar.ItemDetailPage);
+            _typeTable = new global::System.Type[11];
+            _typeTable[0] = typeof(global::YourHomeBar.AddNewRecipe);
+            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::YourHomeBar.Common.ObservableDictionary);
+            _typeTable[4] = typeof(global::System.Object);
+            _typeTable[5] = typeof(global::System.String);
+            _typeTable[6] = typeof(global::YourHomeBar.Common.NavigationHelper);
+            _typeTable[7] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[8] = typeof(global::YourHomeBar.GroupedItemsPage);
+            _typeTable[9] = typeof(global::YourHomeBar.GroupDetailPage);
+            _typeTable[10] = typeof(global::YourHomeBar.ItemDetailPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -189,13 +183,12 @@ namespace YourHomeBar.YourHomeBar_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_VoteOnRecipe() { return new global::YourHomeBar.VoteOnRecipe(); }
-        private object Activate_3_AddNewRecipe() { return new global::YourHomeBar.AddNewRecipe(); }
-        private object Activate_6_ObservableDictionary() { return new global::YourHomeBar.Common.ObservableDictionary(); }
-        private object Activate_11_GroupedItemsPage() { return new global::YourHomeBar.GroupedItemsPage(); }
-        private object Activate_12_GroupDetailPage() { return new global::YourHomeBar.GroupDetailPage(); }
-        private object Activate_13_ItemDetailPage() { return new global::YourHomeBar.ItemDetailPage(); }
-        private void MapAdd_6_ObservableDictionary(object instance, object key, object item)
+        private object Activate_0_AddNewRecipe() { return new global::YourHomeBar.AddNewRecipe(); }
+        private object Activate_3_ObservableDictionary() { return new global::YourHomeBar.Common.ObservableDictionary(); }
+        private object Activate_8_GroupedItemsPage() { return new global::YourHomeBar.GroupedItemsPage(); }
+        private object Activate_9_GroupDetailPage() { return new global::YourHomeBar.GroupDetailPage(); }
+        private object Activate_10_ItemDetailPage() { return new global::YourHomeBar.ItemDetailPage(); }
+        private void MapAdd_3_ObservableDictionary(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
             var newKey = (global::System.String)key;
@@ -213,80 +206,66 @@ namespace YourHomeBar.YourHomeBar_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  YourHomeBar.VoteOnRecipe
-                userType = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.SettingsFlyout"));
-                userType.Activator = Activate_0_VoteOnRecipe;
-                xamlType = userType;
-                break;
-
-            case 1:   //  Windows.UI.Xaml.Controls.SettingsFlyout
-                xamlType = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 2:   //  Windows.UI.Xaml.Controls.ContentControl
-                xamlType = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 3:   //  YourHomeBar.AddNewRecipe
+            case 0:   //  YourHomeBar.AddNewRecipe
                 userType = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_AddNewRecipe;
+                userType.Activator = Activate_0_AddNewRecipe;
                 userType.AddMemberName("DefaultViewModel");
                 userType.AddMemberName("NavigationHelper");
                 xamlType = userType;
                 break;
 
-            case 4:   //  Windows.UI.Xaml.Controls.Page
+            case 1:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 5:   //  Windows.UI.Xaml.Controls.UserControl
+            case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 6:   //  YourHomeBar.Common.ObservableDictionary
+            case 3:   //  YourHomeBar.Common.ObservableDictionary
                 userType = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.DictionaryAdd = MapAdd_6_ObservableDictionary;
+                userType.DictionaryAdd = MapAdd_3_ObservableDictionary;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 7:   //  Object
+            case 4:   //  Object
                 xamlType = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 8:   //  String
+            case 5:   //  String
                 xamlType = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 9:   //  YourHomeBar.Common.NavigationHelper
+            case 6:   //  YourHomeBar.Common.NavigationHelper
                 userType = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 10:   //  Windows.UI.Xaml.DependencyObject
+            case 7:   //  Windows.UI.Xaml.DependencyObject
                 xamlType = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 11:   //  YourHomeBar.GroupedItemsPage
+            case 8:   //  YourHomeBar.GroupedItemsPage
                 userType = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_11_GroupedItemsPage;
+                userType.Activator = Activate_8_GroupedItemsPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 xamlType = userType;
                 break;
 
-            case 12:   //  YourHomeBar.GroupDetailPage
+            case 9:   //  YourHomeBar.GroupDetailPage
                 userType = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_12_GroupDetailPage;
+                userType.Activator = Activate_9_GroupDetailPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 xamlType = userType;
                 break;
 
-            case 13:   //  YourHomeBar.ItemDetailPage
+            case 10:   //  YourHomeBar.ItemDetailPage
                 userType = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_13_ItemDetailPage;
+                userType.Activator = Activate_10_ItemDetailPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 xamlType = userType;

@@ -76,7 +76,7 @@
             </Grid>
                         
             <Image Source="{Binding ImagePath}" Grid.Row="1" Grid.Column="1" Stretch="UniformToFill" AutomationProperties.Name="{Binding Title}"/>
-            <Button Content="Vote on this recipe" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center"/>           
+            <Button Content="Vote on this recipe" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" Click="VoteOnRecipe_Button_Click" />           
             
 		</Grid>
 

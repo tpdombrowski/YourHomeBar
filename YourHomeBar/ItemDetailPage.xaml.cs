@@ -91,5 +91,10 @@ namespace YourHomeBar
         }
 
         #endregion
+
+        private void VoteOnRecipe_Button_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

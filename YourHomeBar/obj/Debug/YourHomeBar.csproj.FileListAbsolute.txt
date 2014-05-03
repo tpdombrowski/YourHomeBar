@@ -60,3 +60,8 @@ C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\AddNewRecipe.xaml
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\AddNewRecipe.xbf
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\AddNewRecipe.xbf
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\VoteOnRecipe.xbf
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\VoteOnRecipe.g.i.cs
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\VoteOnRecipe.g.cs
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\VoteOnRecipe.xaml
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\VoteOnRecipe.xbf

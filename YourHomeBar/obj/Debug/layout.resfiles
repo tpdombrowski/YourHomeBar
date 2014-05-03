@@ -27,5 +27,6 @@ App.xbf
 GroupDetailPage.xbf
 GroupedItemsPage.xbf
 ItemDetailPage.xbf
+VoteOnRecipe.xbf
 DataModel\RecipeDetails.xml
 DataModel\SampleData.json
