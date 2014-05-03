@@ -90,6 +90,9 @@
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\Assets\DarkGray.png">
       <PackagePath>Assets\DarkGray.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\DataModel\RecipeDetails.xml">
+      <PackagePath>DataModel\RecipeDetails.xml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\DataModel\SampleData.json">
       <PackagePath>DataModel\SampleData.json</PackagePath>
     </AppxPackagedFile>

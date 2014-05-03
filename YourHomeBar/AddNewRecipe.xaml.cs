@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
+using System.Xml.Linq;
 using System.Linq;
+using System.IO;
+using Windows.ApplicationModel;
 using System.Runtime.InteropServices.WindowsRuntime;
 using YourHomeBar.Common;
 using Windows.Foundation;
@@ -31,7 +33,7 @@ namespace YourHomeBar
         public static int AmountOfIngredients = 0;
         public ComboBox ComboBoxIngredients = new ComboBox();
         public ComboBox ComboBoxParts = new ComboBox();
-
+        
         /// <summary>
         /// This can be changed to a strongly typed view model.
         /// </summary>
@@ -54,14 +56,10 @@ namespace YourHomeBar
             this.InitializeComponent();
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += navigationHelper_LoadState;
-                        
-            ComboBoxIngredients.Items.Add("Vodka");
-            ComboBoxIngredients.Items.Add("Whiskey");
-            ComboBoxIngredients.Items.Add("Rum");
-        
-            ComboBoxParts.Items.Add("1/2 Ounces");
-            ComboBoxParts.Items.Add("1 Ounces");
-            ComboBoxParts.Items.Add("1-1/2 Ounces");
+
+            BuildIngedientsComboBox();
+
+            BuildPartsComboBox();
         }
 
         /// <summary>
@@ -82,6 +80,11 @@ namespace YourHomeBar
             {
                 navigationParameter = e.PageState["SelectedItem"];
             }
+
+            StackIngredients.Children.Add(ComboBoxIngredients);
+            StackIngredientsPart.Children.Add(ComboBoxParts);
+
+            AmountOfIngredients++;
 
             // TODO: Assign a bindable group to this.DefaultViewModel["Group"]
             // TODO: Assign a collection of bindable items to this.DefaultViewModel["Items"]
@@ -115,7 +118,10 @@ namespace YourHomeBar
         {
             if (StackIngredients.Children.Count < 10)
             {
-                StackIngredients.Children.Add(ComboBoxIngredients);
+                ComboBox temp = new ComboBox();
+                temp.Items.Add("Temp");
+                
+                StackIngredients.Children.Add(temp);
                 StackIngredientsPart.Children.Add(ComboBoxParts);
 
                 AmountOfIngredients++;
@@ -126,8 +132,8 @@ namespace YourHomeBar
         {
             if (StackIngredients.Children.Count>0)
             {
-                StackIngredients.Children.RemoveAt(StackIngredients.Children.Count - 1);
-                StackIngredientsPart.Children.RemoveAt(StackIngredientsPart.Children.Count - 1);
+                StackIngredients.Children.RemoveAt(StackIngredients.Children.Count);
+                StackIngredientsPart.Children.RemoveAt(StackIngredientsPart.Children.Count);
 
                 AmountOfIngredients--;
             }
@@ -148,13 +154,14 @@ namespace YourHomeBar
 
         }
 
-        private void AddPicture_Button_Click(object sender, RoutedEventArgs e)
+        private void AddUserPicture_Button_Click(object sender, RoutedEventArgs e)
         {
-
+            UserSubmittedPictures.UserChoosePicture();
         }
 
         private void Submit_Button_Click(object sender, RoutedEventArgs e)
         {
+
             // Check Add recipe is completely filled in
             if (ComboBoxAlcohol.SelectedItem != null && ComboBoxGlass.SelectedItem != null && ComboBoxIngredients.SelectedItem != null && AmountOfIngredients != 0)
             {
@@ -172,8 +179,67 @@ namespace YourHomeBar
 
                 //SQLConnection.CreateTable();
                 //SQLConnection.InsertRecipe(NewRecipe);
+
+                Frame.Navigate(typeof(GroupedItemsPage));
+
             } 
+
         }
+
+        public static void ChangeUserSubmittedPicture()
+        {
+            
+        }
+
+        public void UpdatePicture()
+        {
+            //Image img = new Image();
+            //img.Source = "Assets/DarkGray.png";
+            //UserPicture.Source = picture;
+        }
+        
+        private void BuildIngedientsComboBox()
+        {
+
+            string recipeDetailsXMLPath = Path.Combine(Package.Current.InstalledLocation.Path, "DataModel/RecipeDetails.xml");
+            XDocument loadedData = XDocument.Load(recipeDetailsXMLPath);
+
+            var ingredientList = from query in loadedData.Descendants("ingredients")
+            select new Ingredients
+            {
+                Ingredient = (string)query.Element("ingredientName")
+            };
+
+            foreach (var ingredient in ingredientList)
+            {
+                ComboBoxIngredients.Items.Add(ingredient.Ingredient);
+            }
+                     
+        }
+
+        private void BuildPartsComboBox()
+        {
+
+            string recipeDetailsXMLPath = Path.Combine(Package.Current.InstalledLocation.Path, "DataModel/RecipeDetails.xml");
+            XDocument loadedData = XDocument.Load(recipeDetailsXMLPath);
+
+            var partList = from query in loadedData.Descendants("parts")
+            select new Parts
+            {
+                Part = (string)query.Element("partName")
+            };
+
+            foreach (var part in partList)
+            {
+                ComboBoxParts.Items.Add(part.Part);
+            }
+
+        }
+
+        //public async void AddingNewIngredient(String NewIngredient)
+        //{
+
+        //}
 
     }
     

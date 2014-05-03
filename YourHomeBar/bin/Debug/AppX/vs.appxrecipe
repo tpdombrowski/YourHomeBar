@@ -17,13 +17,13 @@
     <AppXManifest Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-04-26T00:42:05.432</Modified>
+      <Modified>2014-05-03T16:50:18.668</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\YourHomeBar.exe">
       <PackagePath>YourHomeBar.exe</PackagePath>
-      <Modified>2014-05-03T00:42:04.640</Modified>
+      <Modified>2014-05-03T18:26:53.076</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\Assets\Compari&amp;Soda.png">
       <PackagePath>Assets\Compari&amp;Soda.png</PackagePath>
@@ -121,6 +121,10 @@
       <PackagePath>Assets\DarkGray.png</PackagePath>
       <Modified>2013-07-31T13:01:26.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\DataModel\RecipeDetails.xml">
+      <PackagePath>DataModel\RecipeDetails.xml</PackagePath>
+      <Modified>2014-05-03T18:23:51.220</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\DataModel\SampleData.json">
       <PackagePath>DataModel\SampleData.json</PackagePath>
       <Modified>2014-04-08T04:16:32.223</Modified>
@@ -131,7 +135,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\AddNewRecipe.xbf">
       <PackagePath>AddNewRecipe.xbf</PackagePath>
-      <Modified>2014-05-02T05:53:03.014</Modified>
+      <Modified>2014-05-03T16:41:37.554</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\GroupedItemsPage.xbf">
       <PackagePath>GroupedItemsPage.xbf</PackagePath>
@@ -147,7 +151,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-04-26T00:42:05.399</Modified>
+      <Modified>2014-05-03T16:50:18.638</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

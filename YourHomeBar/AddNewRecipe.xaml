@@ -46,9 +46,10 @@
                     <RowDefinition Height="100"/>
                 </Grid.RowDefinitions>
 
-                <Button Content="Add your photo" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" Grid.Row="0" Click="AddPicture_Button_Click"/>
+                <Image x:Name="UserPicture" Margin="10"/>
 
-                <Button Content="ADDOTHEROPTIONS" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" Grid.Row="1"/>
+                <Button x:Name="AddUserPicture" Content="Add your photo" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" Grid.Row="1" Click="AddUserPicture_Button_Click"/>
+                
             </Grid>
             
             <Grid Grid.Column="1">
@@ -107,7 +108,7 @@
 
                 <StackPanel x:Name="StackIngredients" Grid.Row="2" Margin="10"/>
 
-                <Button Content="Delete Ingredient" Grid.Row="3" HorizontalAlignment="Center" Margin="10,10" Click="RemoveIngredient_Button_Click"/>
+                <Button Content="Remove Ingredient" Grid.Row="3" HorizontalAlignment="Center" Margin="10,10" Click="RemoveIngredient_Button_Click"/>
             </Grid>
             
         </Grid>

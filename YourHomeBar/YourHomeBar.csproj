@@ -124,8 +124,10 @@
     <Compile Include="Common\NavigationHelper.cs" />
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Common\ObservableDictionary.cs" />
+    <Compile Include="RecipeDetails.cs" />
     <Compile Include="SQLite.cs" />
     <Compile Include="SQLiteAsync.cs" />
+    <Compile Include="UserSubmittedPictures.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -185,6 +187,7 @@
     <Content Include="Assets\WhiskeySour.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="DataModel\RecipeDetails.xml" />
     <Content Include="DataModel\SampleData.json" />
   </ItemGroup>
   <ItemGroup>
