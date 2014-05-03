@@ -79,18 +79,19 @@
             
             <Button x:Name="VoteOnRecipe" Content="Vote on this recipe" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center">
                 <Button.Flyout>
-                    <Flyout x:ConnectionId='1'                       >
-                        <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}">
-                            <TextBlock Style="{StaticResource TitleTextBlockStyle}" Margin="0,0,0,25" Text="Voting Criteria" />
-                            <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,25" TextWrapping="Wrap">
+                    <Flyout x:ConnectionId='0'                       >
+                        <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}" Width="300">
+                            <TextBlock Style="{StaticResource TitleTextBlockStyle}" Margin="0,0,0,25" Text="Voting Criteria" HorizontalAlignment="Center"/>
+                            <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,25" TextWrapping="Wrap" HorizontalAlignment="Center">
                                 We vote on our recipies under two conditions:
                             </TextBlock>
-                            <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,25" TextWrapping="Wrap">
+                            <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,25" TextWrapping="Wrap" HorizontalAlignment="Center">
                                 First - Overall rating
                             </TextBlock>
-                            <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,25" TextWrapping="Wrap">
+                            <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,25" TextWrapping="Wrap" HorizontalAlignment="Center">
                                 Second - whether or not you classify this drink recipe as being a classic drink
                             </TextBlock>
+                            
                             <StackPanel HorizontalAlignment="Center">
                                 <RadioButton Content="5 Stars"/>
                                 <RadioButton Content="4 Stars"/>
@@ -98,7 +99,9 @@
                                 <RadioButton Content="2 Stars"/>
                                 <RadioButton Content="1 Stars"/>
                             </StackPanel>
-                            <ToggleSwitch OnContent="This is a Classic Drink" OffContent="This is a Not a Classic Drink"/>
+                            
+                            <ToggleSwitch OnContent="This is a Classic Drink" OffContent="This is a Not a Classic Drink" HorizontalAlignment="Center"/>
+                            <Button Content="Submit" HorizontalAlignment="Center"/>
                         </StackPanel>
                     </Flyout>
                 </Button.Flyout>
