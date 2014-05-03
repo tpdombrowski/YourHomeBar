@@ -128,18 +128,11 @@
     <Compile Include="SQLite.cs" />
     <Compile Include="SQLiteAsync.cs" />
     <Compile Include="UserSubmittedPictures.cs" />
-    <Compile Include="VoteOnRecipe.xaml.cs">
-      <DependentUpon>VoteOnRecipe.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <Page Include="VoteOnRecipe.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <None Include="Common\ReadMe.txt" />
     <None Include="packages.config" />
     <Page Include="AddNewRecipe.xaml">

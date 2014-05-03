@@ -76,7 +76,33 @@
             </Grid>
                         
             <Image Source="{Binding ImagePath}" Grid.Row="1" Grid.Column="1" Stretch="UniformToFill" AutomationProperties.Name="{Binding Title}"/>
-            <Button x:ConnectionId='1' Content="Vote on this recipe" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center"                                   />           
+            
+            <Button x:Name="VoteOnRecipe" Content="Vote on this recipe" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center">
+                <Button.Flyout>
+                    <Flyout x:ConnectionId='1'                       >
+                        <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}">
+                            <TextBlock Style="{StaticResource TitleTextBlockStyle}" Margin="0,0,0,25" Text="Voting Criteria" />
+                            <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,25" TextWrapping="Wrap">
+                                We vote on our recipies under two conditions:
+                            </TextBlock>
+                            <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,25" TextWrapping="Wrap">
+                                First - Overall rating
+                            </TextBlock>
+                            <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,25" TextWrapping="Wrap">
+                                Second - whether or not you classify this drink recipe as being a classic drink
+                            </TextBlock>
+                            <StackPanel HorizontalAlignment="Center">
+                                <RadioButton Content="5 Stars"/>
+                                <RadioButton Content="4 Stars"/>
+                                <RadioButton Content="3 Stars"/>
+                                <RadioButton Content="2 Stars"/>
+                                <RadioButton Content="1 Stars"/>
+                            </StackPanel>
+                            <ToggleSwitch OnContent="This is a Classic Drink" OffContent="This is a Not a Classic Drink"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+            </Button>
             
 		</Grid>
 
