@@ -120,9 +120,35 @@ namespace YourHomeBar
 
         #endregion
 
-        private void Button_AddRecipe(object sender, RoutedEventArgs e)
+        private void NewRecipe_Flyout_Opened(object sender, object e)
         {
-            Frame.Navigate(typeof(AddNewRecipe));
+            Flyout f = sender as Flyout;
         }
+
+        private void NewRecipe_Flyout_Closed(object sender, object e)
+        {
+            Flyout f = sender as Flyout;
+        }
+
+        private void AddIngredient_Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RemoveIngredient_Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SubmitRecipe_Button_Click(object sender, RoutedEventArgs e)
+        {
+            NewRecipe_Flyout_Closed(sender, e);
+        }
+
+        private void AddUserImage_Button_Click(object sender, RoutedEventArgs e)
+        {
+            UserSubmittedPictures.UserChoosePicture();
+        }
+
     }
 }
