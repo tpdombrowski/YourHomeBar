@@ -1,52 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace YourHomeBar
 {
-    class MainAlcoholList
+    public class RecipeDetails
     {
-        string mainAlcohol;
-
-        public string MainAlcohol
-        {
-            get { return mainAlcohol; }
-            set { mainAlcohol = value; }
-        }
-    }
-
-    class GlassTypeList
-    {
-        string glassType;
-
-        public string GlassType
-        {
-            get { return glassType; }
-            set { glassType = value; }
-        }
-    }
-
-    class IngredientList
-    {
-        string ingredient;
-
-        public string Ingredient
-        {
-            get { return ingredient; }
-            set { ingredient = value; }
-        }
-    }
-
-    class PartList
-    {
-        string part;
-
-        public string Part
-        {
-            get { return part; }
-            set { part = value; }
-        }
+        public ObservableCollection<string> MainAlcohol { get; set; }
+        public ObservableCollection<string> GlassType { get; set; }
+        public ObservableCollection<string> Part { get; set; }
+        public ObservableCollection<string> Ingredient { get; set; }
     }
 }

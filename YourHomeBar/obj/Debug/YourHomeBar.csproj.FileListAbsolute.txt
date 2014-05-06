@@ -2,7 +2,9 @@ C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\Assets\CosmoMartini.png
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\Assets\EspressoMartini.png
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\Assets\Gin&Tonic.png
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\Assets\GinMartini.png
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\Assets\MaiTai.png
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\Assets\Manhattan.png
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\Assets\Margarita.png
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\Assets\MintJulep.png
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\Assets\OldFashioned.png
@@ -13,6 +15,7 @@ C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\Assets\VodkaSoda.png
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\Assets\WhiskeySour.png
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\App.xbf
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\AddNewRecipe.xbf
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\GroupedItemsPage.xbf
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\GroupDetailPage.xbf
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\ItemDetailPage.xbf
@@ -23,6 +26,8 @@ C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\YourHomeBar.build.appxrecipe
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\App.g.i.cs
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\App.g.cs
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\AddNewRecipe.g.i.cs
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\AddNewRecipe.g.cs
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\GroupedItemsPage.g.i.cs
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\GroupedItemsPage.g.cs
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\GroupDetailPage.g.i.cs
@@ -30,15 +35,17 @@ C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\ItemDetailPage.g.i.cs
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\ItemDetailPage.g.cs
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\XamlTypeInfo.g.cs
-C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\XamlSaveStateFile.xml
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\App.xaml
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\AddNewRecipe.xaml
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\GroupedItemsPage.xaml
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\GroupDetailPage.xaml
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\ItemDetailPage.xaml
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\App.xbf
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\AddNewRecipe.xbf
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\GroupedItemsPage.xbf
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\GroupDetailPage.xbf
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\ItemDetailPage.xbf
+C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\XamlSaveStateFile.xml
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\YourHomeBar.exe
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\YourHomeBar.pdb
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\priconfig.xml
@@ -53,10 +60,3 @@ C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\qualifiers.txt.intermediate
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\ProjectArchitectures.txt
-C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\Assets\Manhattan.png
-C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\Assets\GinMartini.png
-C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\AddNewRecipe.g.i.cs
-C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\AddNewRecipe.g.cs
-C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\AddNewRecipe.xaml
-C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\obj\Debug\AddNewRecipe.xbf
-C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\AddNewRecipe.xbf
