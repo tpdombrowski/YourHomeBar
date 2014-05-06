@@ -25,6 +25,11 @@
             d:Source="{Binding Groups, Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}"/>
     </Page.Resources>
     
+    <!-- </Page.Resources>
+	    <Page.Background>
+            <ImageBrush ImageSource="assets/wood_1.jpg"/>
+	    </Page.Background> -->
+    
 	<Page.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0"> 
             <GradientStop Color="White" Offset="1"/>
@@ -35,7 +40,7 @@
         <AppBar>
             <Button x:Name="NewRecipe" Content="Create a new recipe" HorizontalAlignment="Right" Margin="10">
                 <Button.Flyout>
-                    <Flyout x:ConnectionId='1' x:Name="NewRecipe_Flyout"                                 >
+                    <Flyout x:ConnectionId='0' x:Name="NewRecipe_Flyout"                                 >
                         <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}" Width="400">
                             <TextBlock Style="{StaticResource TitleTextBlockStyle}" Margin="0,0,0,10" Text="Create a new recipe" HorizontalAlignment="Center"/>
                             <Grid Margin="10">
@@ -45,7 +50,7 @@
                                 </Grid.RowDefinitions>
                                 
                                 <Image x:Name="UserImage" Source="assets/RustyNail.png" Grid.Row="0"/>
-                                <Button x:ConnectionId='5' x:Name="AddUserImage" Content="Add new picture" Grid.Row="1" Margin="4" HorizontalAlignment="Center"                                  />
+                                <Button x:ConnectionId='0' x:Name="AddUserImage" Content="Add new picture" Grid.Row="1" Margin="4" HorizontalAlignment="Center"                                  />
                             </Grid>
                             <Grid>
                                 <Grid.ColumnDefinitions>
@@ -66,7 +71,7 @@
                                 </StackPanel>
 
                                 <StackPanel x:Name="UserInput" Grid.Column="1">
-                                    <ComboBox x:Name="UserInputMainAlcohol" DataContext="{Binding Path=_recipeDetails {RelativeSource MainAlcohol}}" Margin="4"/>
+                                    <ComboBox x:Name="UserInputMainAlcohol" Margin="4"/>
                                     <ComboBox x:Name="UserInputGlassType" Margin="4"/>
 
                                     <Grid>
@@ -86,11 +91,11 @@
                             </Grid>
                             
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                <Button x:ConnectionId='3' Content="Add Ingredient" Margin="10" HorizontalAlignment="Center"                                   />
-                                <Button x:ConnectionId='4' Content="Remove Last Ingredient" Margin="10" HorizontalAlignment="Center"                                      />
+                                <Button x:ConnectionId='0' Content="Add Ingredient" Margin="10" HorizontalAlignment="Center"                                   />
+                                <Button x:ConnectionId='0' Content="Remove Last Ingredient" Margin="10" HorizontalAlignment="Center"                                      />
                             </StackPanel>
 
-                            <Button x:ConnectionId='2' Content="Submit New Recipe" Margin="10" HorizontalAlignment="Center"                                  />
+                            <Button x:ConnectionId='0' Content="Submit New Recipe" Margin="10" HorizontalAlignment="Center"                                  />
                         </StackPanel>
                     </Flyout>
                 </Button.Flyout>
@@ -119,7 +124,7 @@
         </Grid.RowDefinitions>
 
         <!-- Horizontal scrolling grid -->
-        <GridView x:ConnectionId='6'
+        <GridView x:ConnectionId='0'
             x:Name="itemGridView"
             AutomationProperties.AutomationId="ItemGridView"
             AutomationProperties.Name="Grouped Items"
@@ -153,7 +158,7 @@
                     <GroupStyle.HeaderTemplate>
                         <DataTemplate>
                             <Grid Margin="0,0,0,2">
-                                <Button x:ConnectionId='7' Foreground="{ThemeResource ApplicationHeaderForegroundThemeBrush}"
+                                <Button x:ConnectionId='0' Foreground="{ThemeResource ApplicationHeaderForegroundThemeBrush}"
                                     AutomationProperties.Name="Group Title"
                                                         
                                     Style="{StaticResource TextBlockButtonStyle}" >

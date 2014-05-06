@@ -79,7 +79,7 @@
             
             <Button x:Name="VoteOnRecipe" Content="Vote on this recipe" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center">
                 <Button.Flyout>
-                    <Flyout x:ConnectionId='1'                       >
+                    <Flyout x:ConnectionId='0'                       >
                         <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}" Width="300">
                             <TextBlock Style="{StaticResource TitleTextBlockStyle}" Margin="0,0,0,25" Text="Voting Criteria" HorizontalAlignment="Center"/>
                             <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,25" TextWrapping="Wrap" HorizontalAlignment="Center">

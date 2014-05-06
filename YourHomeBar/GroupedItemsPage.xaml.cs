@@ -26,8 +26,6 @@ namespace YourHomeBar
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
 
-        public RecipeDetails _recipeDetails { get; set; }
-
         /// <summary>
         /// NavigationHelper is used on each page to aid in navigation and 
         /// process lifetime management
@@ -149,7 +147,7 @@ namespace YourHomeBar
 
         private void AddUserImage_Button_Click(object sender, RoutedEventArgs e)
         {
-            //UserSubmittedPictures.UserChoosePicture();
+            UserSubmittedPictures.UserChoosePicture();
         }
 
     }

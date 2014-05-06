@@ -25,6 +25,11 @@
             d:Source="{Binding Groups, Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}"/>
     </Page.Resources>
     
+    <!-- </Page.Resources>
+	    <Page.Background>
+            <ImageBrush ImageSource="assets/wood_1.jpg"/>
+	    </Page.Background> -->
+    
 	<Page.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0"> 
             <GradientStop Color="White" Offset="1"/>
@@ -66,7 +71,7 @@
                                 </StackPanel>
 
                                 <StackPanel x:Name="UserInput" Grid.Column="1">
-                                    <ComboBox x:Name="UserInputMainAlcohol" DataContext="{Binding Path=_recipeDetails {RelativeSource MainAlcohol}}" Margin="4"/>
+                                    <ComboBox x:Name="UserInputMainAlcohol" Margin="4"/>
                                     <ComboBox x:Name="UserInputGlassType" Margin="4"/>
 
                                     <Grid>
