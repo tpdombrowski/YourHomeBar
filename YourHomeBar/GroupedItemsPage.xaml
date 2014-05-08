@@ -50,7 +50,7 @@
                                 </Grid.RowDefinitions>
                                 
                                 <Image x:Name="UserImage" Source="assets/RustyNail.png" Grid.Row="0"/>
-                                <Button x:Name="AddUserImage" Content="Add new picture" Grid.Row="1" Margin="4" HorizontalAlignment="Center" Click="AddUserImage_Button_Click"/>
+                                <Button x:Name="AddUserImage" Content="Add new picture" ToolTipService.ToolTip="Add a picture for your recipe" Grid.Row="1" Margin="4" HorizontalAlignment="Center" Click="AddUserImage_Button_Click"/>
                             </Grid>
                             <Grid>
                                 <Grid.ColumnDefinitions>
@@ -71,8 +71,8 @@
                                 </StackPanel>
 
                                 <StackPanel x:Name="UserInput" Grid.Column="1">
-                                    <ComboBox x:Name="UserInputMainAlcohol" Margin="4"/>
-                                    <ComboBox x:Name="UserInputGlassType" Margin="4"/>
+                                    <ComboBox x:Name="UserInputMainAlcohol" ToolTipService.ToolTip="Choose the section this drink should be placed under" Margin="4"/>
+                                    <ComboBox x:Name="UserInputGlassType" ToolTipService.ToolTip="Choose the glass type that this drink should preferably be created in" Margin="4"/>
 
                                     <Grid>
                                         <Grid.ColumnDefinitions>
@@ -81,10 +81,10 @@
                                         </Grid.ColumnDefinitions>
 
                                         <StackPanel x:Name="Part_StackPanel" Grid.Column="0">
-                                            <ComboBox DataContext="Part_DataContext" x:Name="UserInputPart" Margin="4"/>
+                                            <ComboBox DataContext="Part_DataContext" ToolTipService.ToolTip="Choose the amount of the first ingredient that is needed for your drink" x:Name="UserInputPart" Margin="4"/>
                                         </StackPanel>
                                         <StackPanel x:Name="Ingredient_StackPanel" Grid.Column="1">
-                                            <ComboBox DataContext="Ingredient_DataContext" x:Name="UserInputIngreint" Margin="4"/>
+                                            <ComboBox DataContext="Ingredient_DataContext" ToolTipService.ToolTip="Choose the first ingredient needed for your recipe" x:Name="UserInputIngreint" Margin="4"/>
                                         </StackPanel>
                                     </Grid>
                                 </StackPanel>

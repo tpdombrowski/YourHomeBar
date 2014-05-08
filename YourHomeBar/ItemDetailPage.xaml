@@ -77,7 +77,7 @@
                         
             <Image Source="{Binding ImagePath}" Grid.Row="1" Grid.Column="1" Stretch="UniformToFill" AutomationProperties.Name="{Binding Title}"/>
             
-            <Button x:Name="VoteOnRecipe" Content="Vote on this recipe" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center">
+            <Button x:Name="VoteOnRecipe" Content="Vote on this recipe" ToolTipService.ToolTip="Click to add your personal vote for this recipe" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center">
                 <Button.Flyout>
                     <Flyout Opened="flyout_Opened">
                         <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}" Width="300">
@@ -101,7 +101,7 @@
                             </StackPanel>
                             
                             <ToggleSwitch OnContent="This is a Classic Drink" OffContent="This is a Not a Classic Drink" HorizontalAlignment="Center"/>
-                            <Button Content="Submit" HorizontalAlignment="Center"/>
+                            <Button Content="Submit" ToolTipService.ToolTip="Click to submit your vote for this drink" HorizontalAlignment="Center"/>
                         </StackPanel>
                     </Flyout>
                 </Button.Flyout>
