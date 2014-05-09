@@ -127,6 +127,7 @@
     <Compile Include="RecipeDetails.cs" />
     <Compile Include="SQLite.cs" />
     <Compile Include="SQLiteAsync.cs" />
+    <Compile Include="User.cs" />
     <Compile Include="UserSubmittedPictures.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -188,6 +189,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\wood.jpg" />
+    <Content Include="DataModel\UserTable.xml" />
     <Content Include="DataModel\RecipeDetails.xml" />
     <Content Include="DataModel\SampleData.json" />
   </ItemGroup>

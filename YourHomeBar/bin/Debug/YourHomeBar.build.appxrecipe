@@ -93,6 +93,9 @@
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\Assets\wood.jpg">
       <PackagePath>Assets\wood.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\DataModel\UserTable.xml">
+      <PackagePath>DataModel\UserTable.xml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\DataModel\RecipeDetails.xml">
       <PackagePath>DataModel\RecipeDetails.xml</PackagePath>
     </AppxPackagedFile>

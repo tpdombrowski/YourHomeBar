@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Xml;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -13,6 +14,10 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using System.Collections.ObjectModel;
+using Windows.Data.Xml.Dom;
+using Windows.ApplicationModel;
+using System.Xml.Linq;
 
 // The Grouped Items Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234231
 
@@ -25,6 +30,12 @@ namespace YourHomeBar
     {
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
+
+        public MainAlcoholList _mainAlcohol { get; set; }
+        public GlassTypeList _glassType { get; set; }
+        public PartList _part { get; set; }
+        public IngredientList _ingredient { get; set; }
+        private int NumberOfIngredients = 0;
 
         /// <summary>
         /// NavigationHelper is used on each page to aid in navigation and 
@@ -45,9 +56,16 @@ namespace YourHomeBar
 
         public GroupedItemsPage()
         {
+
+            _mainAlcohol = new MainAlcoholList { MainAlcohol = new ObservableCollection<string> { "Vodka" } };
+            _glassType = new GlassTypeList { GlassType = new ObservableCollection<string> { "Martini" } };
+            _part = new PartList { Part = new ObservableCollection<string> { "1" } };
+            _ingredient = new IngredientList { Ingredient = new ObservableCollection<string> { "Vodka" } };
+
             this.InitializeComponent();
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += navigationHelper_LoadState;
+
         }
 
         /// <summary>
@@ -130,13 +148,36 @@ namespace YourHomeBar
             Flyout f = sender as Flyout;
         }
 
+        private void Login_Flyout_Opened(object sender, object e)
+        {
+            Flyout f = sender as Flyout;
+        }
+
+        private void Login_Flyout_Closed(object sender, object e)
+        {
+            Flyout f = sender as Flyout;
+        }
+
         private void AddIngredient_Button_Click(object sender, RoutedEventArgs e)
         {
+            
+            if (NumberOfIngredients < 20)
+            {
+                Ingredient_StackPanel.Children.Add(new ComboBox { Name = string.Format("test{0}", NumberOfIngredients) });
 
+                NumberOfIngredients++;
+            }
+            
         }
 
         private void RemoveIngredient_Button_Click(object sender, RoutedEventArgs e)
         {
+
+            if (NumberOfIngredients > 0)
+            {
+                Ingredient_StackPanel.Children.RemoveAt(NumberOfIngredients);
+                NumberOfIngredients--;
+            }
 
         }
 
@@ -148,6 +189,42 @@ namespace YourHomeBar
         private void AddUserImage_Button_Click(object sender, RoutedEventArgs e)
         {
             UserSubmittedPictures.UserChoosePicture();
+        }
+
+        private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            if (UserInputPassword.Password.Contains(" "))
+            {
+                loginStatus.Text = "Password cannot include a space";
+            }            
+        }
+
+        private void userLogin_Button_Click(object sender, RoutedEventArgs e)
+        {
+            CheckUser();           
+        }
+
+        private void CheckUser()
+        {
+            string usersXMLPath = Path.Combine(Package.Current.InstalledLocation.Path, "DataModel/UserTable.xml");
+            XDocument LoadedData = XDocument.Load(usersXMLPath);
+
+            var data = from query in LoadedData.Descendants("Users")
+                       select new User
+                       {
+                           ID = (string)query.Element("ID"),
+                           Name = (string)query.Element("Name"),
+                           Email = (string)query.Element("Email"),
+                           Password = (string)query.Element("Password")
+                       };
+
+            for (int i = 0; i < data.Count(); i++)
+            {
+                if (data.ElementAt(i).Email == UserInputUserName.Text)
+                    if (data.ElementAt(i).Password == UserInputPassword.Password)
+                        loginStatus.Text = "You exsist";
+            }
+                  
         }
 
     }

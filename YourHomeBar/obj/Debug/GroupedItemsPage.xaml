@@ -38,68 +38,97 @@
 	</Page.Background>
     <Page.BottomAppBar>
         <AppBar>
-            <Button x:Name="NewRecipe" Content="Create a new recipe" HorizontalAlignment="Right" Margin="10">
-                <Button.Flyout>
-                    <Flyout x:ConnectionId='0' x:Name="NewRecipe_Flyout"                                 >
-                        <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}" Width="400">
-                            <TextBlock Style="{StaticResource TitleTextBlockStyle}" Margin="0,0,0,10" Text="Create a new recipe" HorizontalAlignment="Center"/>
-                            <Grid Margin="10">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="300"/>
-                                    <RowDefinition Height="auto"/>
-                                </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="Login" Content="Log in" HorizontalAlignment="Left" Margin="10">
+                    <Button.Flyout>
+                        <Flyout x:ConnectionId='6' x:Name="Login_Flyout"                             >
+                            <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}" Width="400">
+                                <TextBlock Style="{StaticResource TitleTextBlockStyle}" Margin="0,0,0,10" Text="Log In" HorizontalAlignment="Center"/>
                                 
-                                <Image x:Name="UserImage" Source="assets/RustyNail.png" Grid.Row="0"/>
-                                <Button x:ConnectionId='0' x:Name="AddUserImage" Content="Add new picture" ToolTipService.ToolTip="Add a picture for your recipe" Grid.Row="1" Margin="4" HorizontalAlignment="Center"                                  />
-                            </Grid>
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="auto"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
+                                <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal" Margin="10">
+                                    <TextBlock Text="User Name/Email" Width="100" VerticalAlignment="Center" Margin="10"/>
+                                    <TextBox x:Name="UserInputUserName" Width="260" HorizontalAlignment="Stretch"/>
+                                </StackPanel>
                                 
-                                <StackPanel>
-                                    <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="4,10" TextWrapping="Wrap" HorizontalAlignment="Left">
-                                        Main Alcohol Category
-                                    </TextBlock>
-                                    <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="4,10" TextWrapping="Wrap" HorizontalAlignment="Left">
-                                        Glass Type
-                                    </TextBlock>
-                                    <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="4,10" TextWrapping="Wrap" HorizontalAlignment="Left">
-                                        Ingredients
-                                    </TextBlock>
+                                <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal" Margin="10">
+                                    <TextBlock Text="Password" Width="100" VerticalAlignment="Center" Margin="10"/>
+                                    <PasswordBox x:ConnectionId='8' x:Name="UserInputPassword" MaxLength="12"                                               Width="260" HorizontalAlignment="Stretch"/>
                                 </StackPanel>
-
-                                <StackPanel x:Name="UserInput" Grid.Column="1">
-                                    <ComboBox x:Name="UserInputMainAlcohol" ToolTipService.ToolTip="Choose the section this drink should be placed under" Margin="4"/>
-                                    <ComboBox x:Name="UserInputGlassType" ToolTipService.ToolTip="Choose the glass type that this drink should preferably be created in" Margin="4"/>
-
-                                    <Grid>
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="2*"/>
-                                        </Grid.ColumnDefinitions>
-
-                                        <StackPanel x:Name="Part_StackPanel" Grid.Column="0">
-                                            <ComboBox DataContext="Part_DataContext" ToolTipService.ToolTip="Choose the amount of the first ingredient that is needed for your drink" x:Name="UserInputPart" Margin="4"/>
-                                        </StackPanel>
-                                        <StackPanel x:Name="Ingredient_StackPanel" Grid.Column="1">
-                                            <ComboBox DataContext="Ingredient_DataContext" ToolTipService.ToolTip="Choose the first ingredient needed for your recipe" x:Name="UserInputIngreint" Margin="4"/>
-                                        </StackPanel>
-                                    </Grid>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                    <TextBlock x:Name="loginStatus" Text="" HorizontalAlignment="Center" Margin="10" VerticalAlignment="Center" TextWrapping="NoWrap" Width="280"/>
+                                    <Button x:ConnectionId='7' Content="Log in"                                HorizontalAlignment="Right" Margin="10"/>
                                 </StackPanel>
-                            </Grid>
-                            
-                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                <Button x:ConnectionId='0' Content="Add Ingredient" Margin="10" HorizontalAlignment="Center"                                   />
-                                <Button x:ConnectionId='0' Content="Remove Last Ingredient" Margin="10" HorizontalAlignment="Center"                                      />
+                                
+                                <TextBlock Text="Don't have a Log in yet?" HorizontalAlignment="Center" Margin="0,40,0,10"/>
+                                <Button Content="Create New Account" HorizontalAlignment="Center"/>
                             </StackPanel>
+                        </Flyout>
+                    </Button.Flyout>
+                </Button>
 
-                            <Button x:ConnectionId='0' Content="Submit New Recipe" Margin="10" HorizontalAlignment="Center"                                  />
-                        </StackPanel>
-                    </Flyout>
-                </Button.Flyout>
-            </Button>
+                <Button x:Name="NewRecipe" Content="Create a new recipe" HorizontalAlignment="Right" Margin="10">
+                    <Button.Flyout>
+                        <Flyout x:ConnectionId='1' x:Name="NewRecipe_Flyout"                                 >
+                            <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}" Width="400">
+                                <TextBlock Style="{StaticResource TitleTextBlockStyle}" Margin="0,0,0,10" Text="Create a new recipe" HorizontalAlignment="Center"/>
+                                <Grid Margin="10">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="300"/>
+                                        <RowDefinition Height="auto"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Image x:Name="UserImage" Source="assets/RustyNail.png" Grid.Row="0"/>
+                                    <Button x:ConnectionId='5' x:Name="AddUserImage" Content="Add new picture" ToolTipService.ToolTip="Add a picture for your recipe" Grid.Row="1" Margin="4" HorizontalAlignment="Center"                                  />
+                                </Grid>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel>
+                                        <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="4,10" TextWrapping="Wrap" HorizontalAlignment="Left">
+                                        Main Alcohol Category
+                                        </TextBlock>
+                                        <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="4,10" TextWrapping="Wrap" HorizontalAlignment="Left">
+                                        Glass Type
+                                        </TextBlock>
+                                        <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="4,10" TextWrapping="Wrap" HorizontalAlignment="Left">
+                                        Ingredients
+                                        </TextBlock>
+                                    </StackPanel>
+
+                                    <StackPanel x:Name="UserInput" Grid.Column="1">
+                                        <ComboBox x:Name="UserInputMainAlcohol" DataContext="{Binding Path=_mainAlcohol}" ItemsSource="{Binding Path=MainAlcoholList}" ToolTipService.ToolTip="Choose the section this drink should be placed under" Margin="4"/>
+                                        <ComboBox x:Name="UserInputGlassType" ToolTipService.ToolTip="Choose the glass type that this drink should preferably be created in" Margin="4"/>
+
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="2*"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <StackPanel x:Name="Part_StackPanel" Grid.Column="0">
+                                                <ComboBox DataContext="Part_DataContext" ToolTipService.ToolTip="Choose the amount of the first ingredient that is needed for your drink" x:Name="UserInputPart" Margin="4"/>
+                                            </StackPanel>
+                                            <StackPanel x:Name="Ingredient_StackPanel" Grid.Column="1">
+                                                <ComboBox DataContext="Ingredient_DataContext" ToolTipService.ToolTip="Choose the first ingredient needed for your recipe" x:Name="UserInputIngreint" Margin="4"/>
+                                            </StackPanel>
+                                        </Grid>
+                                    </StackPanel>
+                                </Grid>
+
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Button x:ConnectionId='3' Content="Add Ingredient" Margin="10" HorizontalAlignment="Center"                                   />
+                                    <Button x:ConnectionId='4' Content="Remove Last Ingredient" Margin="10" HorizontalAlignment="Center"                                      />
+                                </StackPanel>
+
+                                <Button x:ConnectionId='2' Content="Submit New Recipe" Margin="10" HorizontalAlignment="Center"                                  />
+                            </StackPanel>
+                        </Flyout>
+                    </Button.Flyout>
+                </Button>
+            </StackPanel>
         </AppBar>    
     </Page.BottomAppBar>
     
@@ -124,7 +153,7 @@
         </Grid.RowDefinitions>
 
         <!-- Horizontal scrolling grid -->
-        <GridView x:ConnectionId='0'
+        <GridView x:ConnectionId='9'
             x:Name="itemGridView"
             AutomationProperties.AutomationId="ItemGridView"
             AutomationProperties.Name="Grouped Items"
@@ -158,7 +187,7 @@
                     <GroupStyle.HeaderTemplate>
                         <DataTemplate>
                             <Grid Margin="0,0,0,2">
-                                <Button x:ConnectionId='0' Foreground="{ThemeResource ApplicationHeaderForegroundThemeBrush}"
+                                <Button x:ConnectionId='10' Foreground="{ThemeResource ApplicationHeaderForegroundThemeBrush}"
                                     AutomationProperties.Name="Group Title"
                                                         
                                     Style="{StaticResource TextBlockButtonStyle}" >

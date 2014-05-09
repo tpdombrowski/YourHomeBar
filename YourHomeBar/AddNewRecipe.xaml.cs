@@ -208,96 +208,96 @@ namespace YourHomeBar
         private void BuildMainAlcoholComboBox()
         {
 
-            string recipeDetailsXMLPath = Path.Combine(Package.Current.InstalledLocation.Path, "DataModel/RecipeDetails.xml");
-            XDocument loadedData = XDocument.Load(recipeDetailsXMLPath);
+            //string recipeDetailsXMLPath = Path.Combine(Package.Current.InstalledLocation.Path, "DataModel/RecipeDetails.xml");
+            //XDocument loadedData = XDocument.Load(recipeDetailsXMLPath);
 
-            var mainAlcoholList = from query in loadedData.Descendants("mainalcohol")
-            select new MainAlcoholList
-            {
-                MainAlcohol = (string)query.Element("mainalcoholname")
-            };
+            //var mainAlcoholList = from query in loadedData.Descendants("mainalcohol")
+            //select new MainAlcoholList
+            //{
+            //    MainAlcohol = (string)query.Element("mainalcoholname")
+            //};
 
-            var sortedMainAlcoholList =
-                from mainAlcohol in mainAlcoholList
-                orderby mainAlcohol.MainAlcohol ascending
-                select mainAlcohol;
+            //var sortedMainAlcoholList =
+            //    from mainAlcohol in mainAlcoholList
+            //    orderby mainAlcohol.MainAlcohol ascending
+            //    select mainAlcohol;
 
-            foreach (var mainAlcohol in sortedMainAlcoholList)
-            {
-                ComboBoxIngredients.Items.Add(mainAlcohol.MainAlcohol);
-            }
+            //foreach (var mainAlcohol in sortedMainAlcoholList)
+            //{
+            //    ComboBoxIngredients.Items.Add(mainAlcohol.MainAlcohol);
+            //}
 
         }
 
         private void BuildGlassTypeComboBox()
         {
 
-            string recipeDetailsXMLPath = Path.Combine(Package.Current.InstalledLocation.Path, "DataModel/RecipeDetails.xml");
-            XDocument loadedData = XDocument.Load(recipeDetailsXMLPath);
+            //string recipeDetailsXMLPath = Path.Combine(Package.Current.InstalledLocation.Path, "DataModel/RecipeDetails.xml");
+            //XDocument loadedData = XDocument.Load(recipeDetailsXMLPath);
 
-            var glassTypeList = from query in loadedData.Descendants("glasstype")
-            select new GlassTypeList
-            {
-                GlassType = (string)query.Element("glasstypename")
-            };
+            //var glassTypeList = from query in loadedData.Descendants("glasstype")
+            //select new GlassTypeList
+            //{
+            //    GlassType = (string)query.Element("glasstypename")
+            //};
 
-            var sortedGlassTypeList =
-                from glassType in glassTypeList
-                orderby glassType.GlassType ascending
-                select glassType;
+            //var sortedGlassTypeList =
+            //    from glassType in glassTypeList
+            //    orderby glassType.GlassType ascending
+            //    select glassType;
 
-            foreach (var glasstype in sortedGlassTypeList)
-            {
-                ComboBoxIngredients.Items.Add(glasstype.GlassType);
-            }
+            //foreach (var glasstype in sortedGlassTypeList)
+            //{
+            //    ComboBoxIngredients.Items.Add(glasstype.GlassType);
+            //}
 
         }
 
         private void BuildIngedientsComboBox(ref ComboBox tempComboBax)
         {
 
-            string recipeDetailsXMLPath = Path.Combine(Package.Current.InstalledLocation.Path, "DataModel/RecipeDetails.xml");
-            XDocument loadedData = XDocument.Load(recipeDetailsXMLPath);
+            //string recipeDetailsXMLPath = Path.Combine(Package.Current.InstalledLocation.Path, "DataModel/RecipeDetails.xml");
+            //XDocument loadedData = XDocument.Load(recipeDetailsXMLPath);
 
-            var ingredientList = from query in loadedData.Descendants("ingredients")
-            select new IngredientList
-            {
-                Ingredient = (string)query.Element("ingredientname")
-            };
+            //var ingredientList = from query in loadedData.Descendants("ingredients")
+            //select new IngredientList
+            //{
+            //    Ingredient = (string)query.Element("ingredientname")
+            //};
 
-            var sortedIngredientList =
-                from ingredient in ingredientList
-                orderby ingredient.Ingredient ascending
-                select ingredient;
+            //var sortedIngredientList =
+            //    from ingredient in ingredientList
+            //    orderby ingredient.Ingredient ascending
+            //    select ingredient;
 
-            foreach (var ingredient in sortedIngredientList)
-            {
-                ComboBoxIngredients.Items.Add(ingredient.Ingredient);
-            }
+            //foreach (var ingredient in sortedIngredientList)
+            //{
+            //    ComboBoxIngredients.Items.Add(ingredient.Ingredient);
+            //}
                      
         }
 
         private void BuildPartsComboBox(ref ComboBox tempComboBax)
         {
 
-            string recipeDetailsXMLPath = Path.Combine(Package.Current.InstalledLocation.Path, "DataModel/RecipeDetails.xml");
-            XDocument loadedData = XDocument.Load(recipeDetailsXMLPath);
+            //string recipeDetailsXMLPath = Path.Combine(Package.Current.InstalledLocation.Path, "DataModel/RecipeDetails.xml");
+            //XDocument loadedData = XDocument.Load(recipeDetailsXMLPath);
 
-            var partList = from query in loadedData.Descendants("parts")
-                           select new PartList
-                           {
-                               Part = (string)query.Element("partname")
-                           };
+            //var partList = from query in loadedData.Descendants("parts")
+            //               select new PartList
+            //               {
+            //                   Part = (string)query.Element("partname")
+            //               };
 
-            var sortedPartlist = 
-                from part in partList
-                orderby part.Part ascending
-                select part;
+            //var sortedPartlist = 
+            //    from part in partList
+            //    orderby part.Part ascending
+            //    select part;
 
-            foreach (var part in sortedPartlist)
-            {
-                tempComboBax.Items.Add(part.Part);
-            }
+            //foreach (var part in sortedPartlist)
+            //{
+            //    tempComboBax.Items.Add(part.Part);
+            //}
 
         }
 

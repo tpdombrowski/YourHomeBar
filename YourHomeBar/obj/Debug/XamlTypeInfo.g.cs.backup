@@ -124,7 +124,7 @@ namespace YourHomeBar.YourHomeBar_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[11];
+            _typeNameTable = new string[15];
             _typeNameTable[0] = "YourHomeBar.AddNewRecipe";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -134,10 +134,14 @@ namespace YourHomeBar.YourHomeBar_XamlTypeInfo
             _typeNameTable[6] = "YourHomeBar.Common.NavigationHelper";
             _typeNameTable[7] = "Windows.UI.Xaml.DependencyObject";
             _typeNameTable[8] = "YourHomeBar.GroupedItemsPage";
-            _typeNameTable[9] = "YourHomeBar.GroupDetailPage";
-            _typeNameTable[10] = "YourHomeBar.ItemDetailPage";
+            _typeNameTable[9] = "YourHomeBar.MainAlcoholList";
+            _typeNameTable[10] = "YourHomeBar.GlassTypeList";
+            _typeNameTable[11] = "YourHomeBar.PartList";
+            _typeNameTable[12] = "YourHomeBar.IngredientList";
+            _typeNameTable[13] = "YourHomeBar.GroupDetailPage";
+            _typeNameTable[14] = "YourHomeBar.ItemDetailPage";
 
-            _typeTable = new global::System.Type[11];
+            _typeTable = new global::System.Type[15];
             _typeTable[0] = typeof(global::YourHomeBar.AddNewRecipe);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -147,8 +151,12 @@ namespace YourHomeBar.YourHomeBar_XamlTypeInfo
             _typeTable[6] = typeof(global::YourHomeBar.Common.NavigationHelper);
             _typeTable[7] = typeof(global::Windows.UI.Xaml.DependencyObject);
             _typeTable[8] = typeof(global::YourHomeBar.GroupedItemsPage);
-            _typeTable[9] = typeof(global::YourHomeBar.GroupDetailPage);
-            _typeTable[10] = typeof(global::YourHomeBar.ItemDetailPage);
+            _typeTable[9] = typeof(global::YourHomeBar.MainAlcoholList);
+            _typeTable[10] = typeof(global::YourHomeBar.GlassTypeList);
+            _typeTable[11] = typeof(global::YourHomeBar.PartList);
+            _typeTable[12] = typeof(global::YourHomeBar.IngredientList);
+            _typeTable[13] = typeof(global::YourHomeBar.GroupDetailPage);
+            _typeTable[14] = typeof(global::YourHomeBar.ItemDetailPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -186,8 +194,12 @@ namespace YourHomeBar.YourHomeBar_XamlTypeInfo
         private object Activate_0_AddNewRecipe() { return new global::YourHomeBar.AddNewRecipe(); }
         private object Activate_3_ObservableDictionary() { return new global::YourHomeBar.Common.ObservableDictionary(); }
         private object Activate_8_GroupedItemsPage() { return new global::YourHomeBar.GroupedItemsPage(); }
-        private object Activate_9_GroupDetailPage() { return new global::YourHomeBar.GroupDetailPage(); }
-        private object Activate_10_ItemDetailPage() { return new global::YourHomeBar.ItemDetailPage(); }
+        private object Activate_9_MainAlcoholList() { return new global::YourHomeBar.MainAlcoholList(); }
+        private object Activate_10_GlassTypeList() { return new global::YourHomeBar.GlassTypeList(); }
+        private object Activate_11_PartList() { return new global::YourHomeBar.PartList(); }
+        private object Activate_12_IngredientList() { return new global::YourHomeBar.IngredientList(); }
+        private object Activate_13_GroupDetailPage() { return new global::YourHomeBar.GroupDetailPage(); }
+        private object Activate_14_ItemDetailPage() { return new global::YourHomeBar.ItemDetailPage(); }
         private void MapAdd_3_ObservableDictionary(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
@@ -250,22 +262,50 @@ namespace YourHomeBar.YourHomeBar_XamlTypeInfo
             case 8:   //  YourHomeBar.GroupedItemsPage
                 userType = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_8_GroupedItemsPage;
+                userType.AddMemberName("_mainAlcohol");
+                userType.AddMemberName("_glassType");
+                userType.AddMemberName("_part");
+                userType.AddMemberName("_ingredient");
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 xamlType = userType;
                 break;
 
-            case 9:   //  YourHomeBar.GroupDetailPage
+            case 9:   //  YourHomeBar.MainAlcoholList
+                userType = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 10:   //  YourHomeBar.GlassTypeList
+                userType = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 11:   //  YourHomeBar.PartList
+                userType = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 12:   //  YourHomeBar.IngredientList
+                userType = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 13:   //  YourHomeBar.GroupDetailPage
                 userType = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_GroupDetailPage;
+                userType.Activator = Activate_13_GroupDetailPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 xamlType = userType;
                 break;
 
-            case 10:   //  YourHomeBar.ItemDetailPage
+            case 14:   //  YourHomeBar.ItemDetailPage
                 userType = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_10_ItemDetailPage;
+                userType.Activator = Activate_14_ItemDetailPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 xamlType = userType;
@@ -285,32 +325,72 @@ namespace YourHomeBar.YourHomeBar_XamlTypeInfo
             var that = (global::YourHomeBar.AddNewRecipe)instance;
             return that.NavigationHelper;
         }
-        private object get_2_GroupedItemsPage_NavigationHelper(object instance)
+        private object get_2_GroupedItemsPage__mainAlcohol(object instance)
+        {
+            var that = (global::YourHomeBar.GroupedItemsPage)instance;
+            return that._mainAlcohol;
+        }
+        private void set_2_GroupedItemsPage__mainAlcohol(object instance, object Value)
+        {
+            var that = (global::YourHomeBar.GroupedItemsPage)instance;
+            that._mainAlcohol = (global::YourHomeBar.MainAlcoholList)Value;
+        }
+        private object get_3_GroupedItemsPage__glassType(object instance)
+        {
+            var that = (global::YourHomeBar.GroupedItemsPage)instance;
+            return that._glassType;
+        }
+        private void set_3_GroupedItemsPage__glassType(object instance, object Value)
+        {
+            var that = (global::YourHomeBar.GroupedItemsPage)instance;
+            that._glassType = (global::YourHomeBar.GlassTypeList)Value;
+        }
+        private object get_4_GroupedItemsPage__part(object instance)
+        {
+            var that = (global::YourHomeBar.GroupedItemsPage)instance;
+            return that._part;
+        }
+        private void set_4_GroupedItemsPage__part(object instance, object Value)
+        {
+            var that = (global::YourHomeBar.GroupedItemsPage)instance;
+            that._part = (global::YourHomeBar.PartList)Value;
+        }
+        private object get_5_GroupedItemsPage__ingredient(object instance)
+        {
+            var that = (global::YourHomeBar.GroupedItemsPage)instance;
+            return that._ingredient;
+        }
+        private void set_5_GroupedItemsPage__ingredient(object instance, object Value)
+        {
+            var that = (global::YourHomeBar.GroupedItemsPage)instance;
+            that._ingredient = (global::YourHomeBar.IngredientList)Value;
+        }
+        private object get_6_GroupedItemsPage_NavigationHelper(object instance)
         {
             var that = (global::YourHomeBar.GroupedItemsPage)instance;
             return that.NavigationHelper;
         }
-        private object get_3_GroupedItemsPage_DefaultViewModel(object instance)
+        private object get_7_GroupedItemsPage_DefaultViewModel(object instance)
         {
             var that = (global::YourHomeBar.GroupedItemsPage)instance;
             return that.DefaultViewModel;
         }
-        private object get_4_GroupDetailPage_NavigationHelper(object instance)
+        private object get_8_GroupDetailPage_NavigationHelper(object instance)
         {
             var that = (global::YourHomeBar.GroupDetailPage)instance;
             return that.NavigationHelper;
         }
-        private object get_5_GroupDetailPage_DefaultViewModel(object instance)
+        private object get_9_GroupDetailPage_DefaultViewModel(object instance)
         {
             var that = (global::YourHomeBar.GroupDetailPage)instance;
             return that.DefaultViewModel;
         }
-        private object get_6_ItemDetailPage_NavigationHelper(object instance)
+        private object get_10_ItemDetailPage_NavigationHelper(object instance)
         {
             var that = (global::YourHomeBar.ItemDetailPage)instance;
             return that.NavigationHelper;
         }
-        private object get_7_ItemDetailPage_DefaultViewModel(object instance)
+        private object get_11_ItemDetailPage_DefaultViewModel(object instance)
         {
             var that = (global::YourHomeBar.ItemDetailPage)instance;
             return that.DefaultViewModel;
@@ -335,40 +415,64 @@ namespace YourHomeBar.YourHomeBar_XamlTypeInfo
                 xamlMember.Getter = get_1_AddNewRecipe_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
+            case "YourHomeBar.GroupedItemsPage._mainAlcohol":
+                userType = (global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlUserType)GetXamlTypeByName("YourHomeBar.GroupedItemsPage");
+                xamlMember = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlMember(this, "_mainAlcohol", "YourHomeBar.MainAlcoholList");
+                xamlMember.Getter = get_2_GroupedItemsPage__mainAlcohol;
+                xamlMember.Setter = set_2_GroupedItemsPage__mainAlcohol;
+                break;
+            case "YourHomeBar.GroupedItemsPage._glassType":
+                userType = (global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlUserType)GetXamlTypeByName("YourHomeBar.GroupedItemsPage");
+                xamlMember = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlMember(this, "_glassType", "YourHomeBar.GlassTypeList");
+                xamlMember.Getter = get_3_GroupedItemsPage__glassType;
+                xamlMember.Setter = set_3_GroupedItemsPage__glassType;
+                break;
+            case "YourHomeBar.GroupedItemsPage._part":
+                userType = (global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlUserType)GetXamlTypeByName("YourHomeBar.GroupedItemsPage");
+                xamlMember = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlMember(this, "_part", "YourHomeBar.PartList");
+                xamlMember.Getter = get_4_GroupedItemsPage__part;
+                xamlMember.Setter = set_4_GroupedItemsPage__part;
+                break;
+            case "YourHomeBar.GroupedItemsPage._ingredient":
+                userType = (global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlUserType)GetXamlTypeByName("YourHomeBar.GroupedItemsPage");
+                xamlMember = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlMember(this, "_ingredient", "YourHomeBar.IngredientList");
+                xamlMember.Getter = get_5_GroupedItemsPage__ingredient;
+                xamlMember.Setter = set_5_GroupedItemsPage__ingredient;
+                break;
             case "YourHomeBar.GroupedItemsPage.NavigationHelper":
                 userType = (global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlUserType)GetXamlTypeByName("YourHomeBar.GroupedItemsPage");
                 xamlMember = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlMember(this, "NavigationHelper", "YourHomeBar.Common.NavigationHelper");
-                xamlMember.Getter = get_2_GroupedItemsPage_NavigationHelper;
+                xamlMember.Getter = get_6_GroupedItemsPage_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "YourHomeBar.GroupedItemsPage.DefaultViewModel":
                 userType = (global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlUserType)GetXamlTypeByName("YourHomeBar.GroupedItemsPage");
                 xamlMember = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "YourHomeBar.Common.ObservableDictionary");
-                xamlMember.Getter = get_3_GroupedItemsPage_DefaultViewModel;
+                xamlMember.Getter = get_7_GroupedItemsPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "YourHomeBar.GroupDetailPage.NavigationHelper":
                 userType = (global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlUserType)GetXamlTypeByName("YourHomeBar.GroupDetailPage");
                 xamlMember = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlMember(this, "NavigationHelper", "YourHomeBar.Common.NavigationHelper");
-                xamlMember.Getter = get_4_GroupDetailPage_NavigationHelper;
+                xamlMember.Getter = get_8_GroupDetailPage_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "YourHomeBar.GroupDetailPage.DefaultViewModel":
                 userType = (global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlUserType)GetXamlTypeByName("YourHomeBar.GroupDetailPage");
                 xamlMember = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "YourHomeBar.Common.ObservableDictionary");
-                xamlMember.Getter = get_5_GroupDetailPage_DefaultViewModel;
+                xamlMember.Getter = get_9_GroupDetailPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "YourHomeBar.ItemDetailPage.NavigationHelper":
                 userType = (global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlUserType)GetXamlTypeByName("YourHomeBar.ItemDetailPage");
                 xamlMember = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlMember(this, "NavigationHelper", "YourHomeBar.Common.NavigationHelper");
-                xamlMember.Getter = get_6_ItemDetailPage_NavigationHelper;
+                xamlMember.Getter = get_10_ItemDetailPage_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "YourHomeBar.ItemDetailPage.DefaultViewModel":
                 userType = (global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlUserType)GetXamlTypeByName("YourHomeBar.ItemDetailPage");
                 xamlMember = new global::YourHomeBar.YourHomeBar_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "YourHomeBar.Common.ObservableDictionary");
-                xamlMember.Getter = get_7_ItemDetailPage_DefaultViewModel;
+                xamlMember.Getter = get_11_ItemDetailPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             }

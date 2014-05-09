@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Users>
+  <User>
+    <ID>1</ID>
+    <Name>cdw989</Name>
+    <Email>cdw989@outlook.com</Email>
+    <Password>Test1234</Password>
+  </User>
+  <User>
+    <ID>2</ID>
+    <Name>Colin</Name>
+    <Email>collinisapoophead@outlook.com</Email>
+    <Password>Test12345</Password>
+  </User>
+</Users>

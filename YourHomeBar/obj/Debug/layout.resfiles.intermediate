@@ -29,3 +29,4 @@ GroupedItemsPage.xbf
 ItemDetailPage.xbf
 DataModel\RecipeDetails.xml
 DataModel\SampleData.json
+DataModel\UserTable.xml
