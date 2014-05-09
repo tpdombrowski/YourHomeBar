@@ -1,99 +1,99 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<recipedetails>
-  <mainalcohol>
-    <mainalcoholname>Vodka</mainalcoholname>
-  </mainalcohol>
-  <mainalcohol>
-    <mainalcoholname>Whiskey</mainalcoholname>
-  </mainalcohol>
-  <mainalcohol>
-    <mainalcoholname>Gin</mainalcoholname>
-  </mainalcohol>
-  <mainalcohol>
-    <mainalcoholname>Rum</mainalcoholname>
-  </mainalcohol>
-  <mainalcohol>
-    <mainalcoholname>Tequila</mainalcoholname>
-  </mainalcohol>
-  <mainalcohol>
-    <mainalcoholname>miscellaneous</mainalcoholname>
-  </mainalcohol>
+<RecipeDetails>
+  <MainAlcoholList>
+    <MainAlcohol>Vodka</MainAlcohol>
+  </MainAlcoholList>
+  <MainAlcoholList>
+    <MainAlcohol>Whiskey</MainAlcohol>
+  </MainAlcoholList>
+  <MainAlcoholList>
+    <MainAlcohol>Gin</MainAlcohol>
+  </MainAlcoholList>
+  <MainAlcoholList>
+    <MainAlcohol>Rum</MainAlcohol>
+  </MainAlcoholList>
+  <MainAlcoholList>
+    <MainAlcohol>Tequila</MainAlcohol>
+  </MainAlcoholList>
+  <MainAlcoholList>
+    <MainAlcohol>miscellaneous</MainAlcohol>
+  </MainAlcoholList>
 
-  <glasstype>
-    <glasstypename>Martini</glasstypename>
-  </glasstype>
-  <glasstype>
-    <glasstypename>Rocks</glasstypename>
-  </glasstype>
-  <glasstype>
-    <glasstypename>Pilsner</glasstypename>
-  </glasstype>
-  <glasstype>
-    <glasstypename>Collins</glasstypename>
-  </glasstype>
-  <glasstype>
-    <glasstypename>Poco</glasstypename>
-  </glasstype>
-  <glasstype>
-    <glasstypename>Beer</glasstypename>
-  </glasstype>
+  <GlassTypeList>
+    <GlassType>Martini</GlassType>
+  </GlassTypeList>
+  <GlassTypeList>
+    <GlassType>Rocks</GlassType>
+  </GlassTypeList>
+  <GlassTypeList>
+    <GlassType>Pilsner</GlassType>
+  </GlassTypeList>
+  <GlassTypeList>
+    <GlassType>Collins</GlassType>
+  </GlassTypeList>
+  <GlassTypeList>
+    <GlassType>Poco</GlassType>
+  </GlassTypeList>
+  <GlassTypeList>
+    <GlassType>Beer</GlassType>
+  </GlassTypeList>
   
-  <ingredients>
-    <ingredientname>Vodka</ingredientname>
-  </ingredients>
-  <ingredients>
-    <ingredientname>Whiskey</ingredientname>
-  </ingredients>
-  <ingredients>
-    <ingredientname>Rum</ingredientname>
-  </ingredients>
-  <ingredients>
-    <ingredientname>Soda</ingredientname>
-  </ingredients>
-  <ingredients>
-    <ingredientname>Ginger Ale</ingredientname>
-  </ingredients>
-  <ingredients>
-    <ingredientname>Orange Juice</ingredientname>
-  </ingredients>
-  <ingredients>
-    <ingredientname>Milk</ingredientname>
-  </ingredients>
-  <ingredients>
-    <ingredientname>Bailey's</ingredientname>
-  </ingredients>
-  <ingredients>
-    <ingredientname>Kahlua</ingredientname>
-  </ingredients>
-  <ingredients>
-    <ingredientname>Lemonaid</ingredientname>
-  </ingredients>
-  <ingredients>
-    <ingredientname>Beer</ingredientname>
-  </ingredients>
-  <ingredients>
-    <ingredientname>Wine</ingredientname>
-  </ingredients>
+  <IngredientsList>
+    <Ingredient>Vodka</Ingredient>
+  </IngredientsList>
+  <IngredientsList>
+    <Ingredient>Whiskey</Ingredient>
+  </IngredientsList>
+  <IngredientsList>
+    <Ingredient>Rum</Ingredient>
+  </IngredientsList>
+  <IngredientsList>
+    <Ingredient>Soda</Ingredient>
+  </IngredientsList>
+  <IngredientsList>
+    <Ingredient>Ginger Ale</Ingredient>
+  </IngredientsList>
+  <IngredientsList>
+    <Ingredient>Orange Juice</Ingredient>
+  </IngredientsList>
+  <IngredientsList>
+    <Ingredient>Milk</Ingredient>
+  </IngredientsList>
+  <IngredientsList>
+    <Ingredient>Bailey's</Ingredient>
+  </IngredientsList>
+  <IngredientsList>
+    <Ingredient>Kahlua</Ingredient>
+  </IngredientsList>
+  <IngredientsList>
+    <Ingredient>Lemonaid</Ingredient>
+  </IngredientsList>
+  <IngredientsList>
+    <Ingredient>Beer</Ingredient>
+  </IngredientsList>
+  <IngredientsList>
+    <Ingredient>Wine</Ingredient>
+  </IngredientsList>
   
-  <parts>
-    <partname>1/2 Ounce</partname>
-  </parts>
-  <parts>
-    <partname>1 Ounce</partname>
-  </parts>
-  <parts>
-    <partname>1-1/2 Ounce</partname>
-  </parts>
-  <parts>
-    <partname>Splash</partname>
-  </parts>
-  <parts>
-    <partname>Pint</partname>
-  </parts>
-  <parts>
-    <partname>Half a Pint</partname>
-  </parts>
-  <parts>
-    <partname>1/4 Ounce</partname>
-  </parts>
-</recipedetails>
+  <PartsList>
+    <Part>1/2 Ounce</Part>
+  </PartsList>
+  <PartsList>
+    <Part>1 Ounce</Part>
+  </PartsList>
+  <PartsList>
+    <Part>1-1/2 Ounce</Part>
+  </PartsList>
+  <PartsList>
+    <Part>Splash</Part>
+  </PartsList>
+  <PartsList>
+    <Part>Pint</Part>
+  </PartsList>
+  <PartsList>
+    <Part>Half a Pint</Part>
+  </PartsList>
+  <PartsList>
+    <Part>1/4 Ounce</Part>
+  </PartsList>
+</RecipeDetails>

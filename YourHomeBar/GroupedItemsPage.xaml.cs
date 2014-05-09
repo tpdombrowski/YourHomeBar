@@ -31,10 +31,11 @@ namespace YourHomeBar
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
 
-        public MainAlcoholList _mainAlcohol { get; set; }
-        public GlassTypeList _glassType { get; set; }
-        public PartList _part { get; set; }
-        public IngredientList _ingredient { get; set; }
+        public ObservableCollection<string> MainAlcoholList = new ObservableCollection<string>();
+        public ObservableCollection<string> GlassTypeList = new ObservableCollection<string>();
+        public ObservableCollection<string> PartList = new ObservableCollection<string>();
+        public ObservableCollection<string> IngredientList = new ObservableCollection<string>();
+
         private int NumberOfIngredients = 0;
 
         /// <summary>
@@ -56,11 +57,7 @@ namespace YourHomeBar
 
         public GroupedItemsPage()
         {
-
-            _mainAlcohol = new MainAlcoholList { MainAlcohol = new ObservableCollection<string> { "Vodka" } };
-            _glassType = new GlassTypeList { GlassType = new ObservableCollection<string> { "Martini" } };
-            _part = new PartList { Part = new ObservableCollection<string> { "1" } };
-            _ingredient = new IngredientList { Ingredient = new ObservableCollection<string> { "Vodka" } };
+            //SetupComboBox();
 
             this.InitializeComponent();
             this.navigationHelper = new NavigationHelper(this);
@@ -138,6 +135,34 @@ namespace YourHomeBar
 
         #endregion
 
+        private void SetupComboBox()
+        {
+            string usersXMLPath = Path.Combine(Package.Current.InstalledLocation.Path, "DataModel/RecipeDetails.xml");
+            XDocument LoadedData = XDocument.Load(usersXMLPath);
+
+            var data = from query in LoadedData.Descendants("Users")
+                       select new RecipeDetails
+                       {
+                           MainAlcohol = (string)query.Element("MainAlcohol"),
+                           GlassType = (string)query.Element("GlassType"),
+                           Part = (string)query.Element("Part"),
+                           Ingredient = (string)query.Element("Ingredient")
+                       };
+
+            for (int i = 0; i < 3; i++)
+                MainAlcoholList.Add(data.ElementAt(i).MainAlcohol);
+            
+            for (int i = 0; i < 3; i++)
+                GlassTypeList.Add(data.ElementAt(i).GlassType);
+                        
+            for (int i = 0; i < 3; i++)
+                PartList.Add(data.ElementAt(i).Part);
+                        
+            for (int i = 0; i < 3; i++)
+                IngredientList.Add(data.ElementAt(i).Ingredient);
+        
+        }
+
         private void NewRecipe_Flyout_Opened(object sender, object e)
         {
             Flyout f = sender as Flyout;
@@ -201,30 +226,51 @@ namespace YourHomeBar
 
         private void userLogin_Button_Click(object sender, RoutedEventArgs e)
         {
-            CheckUser();           
+            CheckUser(sender, e);           
         }
 
-        private void CheckUser()
+        private void CheckUser(object sender, RoutedEventArgs e)
         {
             string usersXMLPath = Path.Combine(Package.Current.InstalledLocation.Path, "DataModel/UserTable.xml");
             XDocument LoadedData = XDocument.Load(usersXMLPath);
 
-            var data = from query in LoadedData.Descendants("Users")
+            var data = from query in LoadedData.Descendants("User")
                        select new User
                        {
                            ID = (string)query.Element("ID"),
                            Name = (string)query.Element("Name"),
                            Email = (string)query.Element("Email"),
-                           Password = (string)query.Element("Password")
+                           Password = (string)query.Element("Password"),
+                           LoginAttempts = (string)query.Element("LoginAttempts")
                        };
 
             for (int i = 0; i < data.Count(); i++)
             {
                 if (data.ElementAt(i).Email == UserInputUserName.Text)
+                {
                     if (data.ElementAt(i).Password == UserInputPassword.Password)
-                        loginStatus.Text = "You exsist";
+                    {
+                        
+                    }
+                    else
+                    {
+                        loginStatus.Text = "Username/Email Exists: Password Does not match";
+                    }
+                }
+                else if (data.ElementAt(i).Name == UserInputUserName.Text)
+                {
+                    if (data.ElementAt(i).Password == UserInputPassword.Password)
+                    {
+                        
+                    }
+                    else
+                    {
+                        loginStatus.Text = "Username/Email Exists: Password Does not match";
+                    }
+                }
+                //loginAttempts++;
             }
-                  
+    
         }
 
     }

@@ -13,6 +13,7 @@ namespace YourHomeBar
         string name;
         string email;
         string password;
+        string loginAttempts;
 
         public string ID
         {
@@ -36,6 +37,12 @@ namespace YourHomeBar
         {
             get { return password; }
             set { password = value; }
+        }
+
+        public string LoginAttempts
+        {
+            get { return loginAttempts; }
+            set { loginAttempts = value; }
         }
 
     }

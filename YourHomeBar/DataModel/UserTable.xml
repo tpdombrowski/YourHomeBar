@@ -5,11 +5,13 @@
     <Name>cdw989</Name>
     <Email>cdw989@outlook.com</Email>
     <Password>Test1234</Password>
+    <LoginAttempts>0</LoginAttempts>
   </User>
   <User>
     <ID>2</ID>
     <Name>Colin</Name>
     <Email>collinisapoophead@outlook.com</Email>
     <Password>Test12345</Password>
+    <LoginAttempts>0</LoginAttempts>
   </User>
 </Users>

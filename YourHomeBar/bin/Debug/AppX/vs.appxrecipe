@@ -23,7 +23,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\YourHomeBar.exe">
       <PackagePath>YourHomeBar.exe</PackagePath>
-      <Modified>2014-05-09T00:50:13.957</Modified>
+      <Modified>2014-05-09T01:30:15.957</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\Assets\Compari&amp;Soda.png">
       <PackagePath>Assets\Compari&amp;Soda.png</PackagePath>
@@ -131,7 +131,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\DataModel\RecipeDetails.xml">
       <PackagePath>DataModel\RecipeDetails.xml</PackagePath>
-      <Modified>2014-05-03T19:11:37.918</Modified>
+      <Modified>2014-05-09T00:57:45.542</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\DataModel\SampleData.json">
       <PackagePath>DataModel\SampleData.json</PackagePath>
@@ -147,7 +147,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\GroupedItemsPage.xbf">
       <PackagePath>GroupedItemsPage.xbf</PackagePath>
-      <Modified>2014-05-09T00:50:13.588</Modified>
+      <Modified>2014-05-09T01:16:47.776</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\Visual Studio 2013\Projects\YourHomeBar\YourHomeBar\bin\Debug\GroupDetailPage.xbf">
       <PackagePath>GroupDetailPage.xbf</PackagePath>

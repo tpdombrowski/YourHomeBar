@@ -99,8 +99,8 @@
                                     </StackPanel>
 
                                     <StackPanel x:Name="UserInput" Grid.Column="1">
-                                        <ComboBox x:Name="UserInputMainAlcohol" DataContext="{Binding Path=_mainAlcohol}" ItemsSource="{Binding Path=MainAlcoholList}" ToolTipService.ToolTip="Choose the section this drink should be placed under" Margin="4"/>
-                                        <ComboBox x:Name="UserInputGlassType" ToolTipService.ToolTip="Choose the glass type that this drink should preferably be created in" Margin="4"/>
+                                        <ComboBox x:Name="UserInputMainAlcohol" DataContext="{Binding Path=mainAlcoholList}" ItemsSource="{Binding Path=MainAlcohol}" ToolTipService.ToolTip="Choose the section this drink should be placed under" Margin="4"/>
+                                        <ComboBox x:Name="UserInputGlassType" DataContext="{Binding Path=glassTypeList}" ItemsSource="{Binding Path=GlassType}" ToolTipService.ToolTip="Choose the glass type that this drink should preferably be created in" Margin="4"/>
 
                                         <Grid>
                                             <Grid.ColumnDefinitions>

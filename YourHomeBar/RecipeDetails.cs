@@ -11,30 +11,11 @@ namespace YourHomeBar
     class RecipeDetails
     {
 
-        public ObservableCollection<string> MainAlcohol { get; set; }
-        public ObservableCollection<string> GlassType { get; set; }
-        public ObservableCollection<string> Ingredient { get; set; }
-        public ObservableCollection<string> Part { get; set; }
+        public string MainAlcohol { get; set; }
+        public string GlassType { get; set; }
+        public string Ingredient { get; set; }
+        public string Part { get; set; }
 
     }
 
-    public class MainAlcoholList
-    {
-        public ObservableCollection<string> MainAlcohol { get; set; }
-    }
-
-    public class GlassTypeList
-    {
-        public ObservableCollection<string> GlassType { get; set; }
-    }
-
-    public class IngredientList
-    {
-        public ObservableCollection<string> Ingredient { get; set; }
-    }
-
-    public class PartList
-    {
-        public ObservableCollection<string> Part { get; set; }
-    }
 }
